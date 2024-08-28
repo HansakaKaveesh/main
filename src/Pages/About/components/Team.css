@@ -1,0 +1,62 @@
+/* src/components/Team.css */
+
+.team h2 {
+  text-align: center;
+  font-size: 3rem;
+  background-color: #62420E;
+  color: #fff;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.team-section {
+  text-align: center;
+  padding: 100px 0;
+  color: white;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  
+}
+
+.team-member {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  width: 150px;
+  height: 195px;
+  border-radius: 200%;
+  overflow: center;
+  margin: 0 auto 10px auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-member h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+ 
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #333;
+}

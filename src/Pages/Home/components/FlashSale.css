@@ -1,0 +1,112 @@
+/* Flash Sale Section */
+.flash-sale {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px; 
+    overflow: hidden;
+    padding: 10%;
+    box-sizing: border-box;
+}
+
+.flash-sale img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    display: block;
+}
+
+.flash-sale-text {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 0 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.flash-sale:hover .flash-sale-text {
+    opacity: 1;
+}
+
+.flash-sale-text h2 {
+    margin: 0;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.flash-sale-text p {
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+.btn {
+    background-color: #FF3B2E;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff5e57; 
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .flash-sale {
+        height: 400px;
+        padding: 5%;
+    }
+
+    .flash-sale-text h2 {
+        font-size: 6vw;
+    }
+
+    .flash-sale-text p {
+        font-size: 1em;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .flash-sale {
+        height: 300px;
+        padding: 5%;
+    }
+
+    .flash-sale-text h2 {
+        font-size: 8vw;
+    }
+
+    .flash-sale-text p {
+        font-size: 0.9em;
+        margin: 10px 0;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}

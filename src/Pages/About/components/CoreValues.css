@@ -1,0 +1,27 @@
+/* src/components/CoreValues.css */
+.core-values {
+    padding: 0px 0px;
+    
+  }
+  
+  .core-values h2 {
+    text-align: center;
+    font-size: 3rem;
+    background-color:#62420E;
+    color: #fff;
+  }
+  
+  .core-values ul {
+    list-style: disc;
+    padding: 40px;
+    max-width: 1500px;
+    margin: 0 auto;
+  
+  }
+  
+  .core-values li {
+    font-size: 1.5rem;
+    color: #030303;
+    margin-bottom: 10px;
+  }
+  
