@@ -4,7 +4,7 @@
     text-align: right;
     color: #333;
     padding: 0px 20px;
-    background-image: linear-gradient(to right, #ffffff, #c5aa7b);
+    background-image: linear-gradient(to right, #ffffff, #d8cbb3);
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -12,6 +12,12 @@
     min-height: 100vh;
     box-sizing: border-box;
 }
+.logo {
+    aspect-ratio: 1.42;
+    object-fit: contain;
+    width: 215px;
+    transform: translate(0%, -50%);
+  }
 
 /* Hero image styling */
 .hero-img {

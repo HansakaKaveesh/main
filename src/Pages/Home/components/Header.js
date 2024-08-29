@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
 
-
-
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -38,7 +36,7 @@ function Header() {
             )}
           </li>
           <li><Link to="/About">About Us</Link></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><Link to="/Contact">Contact Us</Link></li>
           <li><a href="#">Login</a></li>
         </ul>
       </nav>
