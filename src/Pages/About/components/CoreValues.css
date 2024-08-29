@@ -1,28 +1,50 @@
 /* src/components/CoreValues.css */
 .core-values {
-  padding: 40px 0px;
-  
+  padding: 40px 20px;
+  background-color: #f8f5f2; /* Light background for contrast */
 }
 
 .core-values h2 {
-  text-align:center;
+  text-align: center;
   font-size: 2.5rem;
-  background-color:#62420E;
+  background-color: #62420E;
   color: #ffffff;
-  height:80px;
-  padding-top: 10px; 
+  padding: 10px 0; 
+  margin-bottom: 30px;
 }
 
 .core-values ul {
   list-style: disc;
-  padding: 40px;
-  max-width: 1500px;
+  padding: 20px 20px;
+  max-width: 90%;
   margin: 0 auto;
-
 }
 
 .core-values li {
   font-size: 1rem;
   color: #030303;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Media Queries for responsiveness */
+@media (min-width: 768px) {
+  .core-values ul {
+    padding: 40px;
+    max-width: 80%;
+  }
+
+  .core-values h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .core-values ul {
+    max-width: 70%;
+  }
+
+  .core-values li {
+    font-size: 1.1rem;
+  }
 }
