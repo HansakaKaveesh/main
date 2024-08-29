@@ -1,0 +1,87 @@
+.signUpSection {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.formTitle {
+  color: #000;
+  font-family: 'Abhaya Libre Medium', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.signUpForm {
+  width: 100%;
+  max-width: 431px;
+}
+
+.inputGroup {
+  margin-bottom: 1.5rem;
+}
+
+.inputLabel {
+  display: block;
+  color: #252a31;
+  font-family: 'Abhaya Libre', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.inputField {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #bac7d5;
+  background-color: #e8edf1;
+  font-size: 16px;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  background-color: rgba(192, 136, 37, 0.86);
+  color: #fff;
+  font-family: 'Abhaya Libre', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+.loginLink {
+  color: #000;
+  font-family: 'Abhaya Libre', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  align-self: flex-end;
+}
+
+@media (max-width: 991px) {
+  .signUpSection {
+    flex: 1 0 100%;
+    padding: 1rem;
+  }
+
+  .formTitle {
+    font-size: 32px;
+  }
+
+  .inputLabel,
+  .submitButton {
+    font-size: 24px;
+  }
+
+  .loginLink {
+    font-size: 18px;
+    align-self: center;
+  }
+}

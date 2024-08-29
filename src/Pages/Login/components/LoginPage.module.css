@@ -1,0 +1,82 @@
+.loginPage {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.mainContent {
+  width: 100%;
+  max-width: 1316px;
+  padding: 0 25px;
+}
+
+.contentWrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.imageColumn {
+  width: 64%;
+}
+
+.mainImage {
+  
+  object-fit: contain;
+  width: 90%;
+}
+
+.secondaryImage {
+  
+  object-fit: contain;
+  width: 215px;
+  margin-top: 10px;
+}
+
+.accountOptions {
+  text-align: right;
+  margin-top: 20px;
+  font-family: 'Abhaya Libre', sans-serif;
+  color: #000;
+  padding-bottom: 20px;
+}
+
+.newCustomer {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.passwordRecovery {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+}
+
+@media (max-width: 991px) {
+  .mainContent {
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contentWrapper {
+    flex-direction: column;
+  }
+
+  .imageColumn {
+    width: 100%;
+  }
+
+  .secondaryImage {
+    margin-top: 16px;
+  }
+
+  .accountOptions {
+    margin-right: 10px;
+  }
+}
