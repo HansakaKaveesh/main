@@ -1,5 +1,5 @@
 /* Hero section styling */
-.hero {
+.Sec {
     position: relative;
     text-align: right;
     color: #333;
@@ -16,11 +16,11 @@
     aspect-ratio: 1.42;
     object-fit: contain;
     width: 215px;
-    transform: translate(0%, -50%);
+    transform: translate(0%, -30%);
   }
 
 /* Hero image styling */
-.hero-img {
+.Sec-img {
     width: 50%;
     max-height: 100%;
     margin-right: 50%;
@@ -29,7 +29,7 @@
 }
 
 /* Hero text styling */
-.hero-text {
+.Sec-text {
     position: absolute;
     top: 50%;
     right: 10%;
@@ -37,19 +37,19 @@
     text-align: right;
 }
 
-.hero h1 {
+.Sec h1 {
     font-size: 4vw;
     margin: 0;
 }
 
-.hero p {
+.Sec p {
     font-size: 1.5vw;
     margin: 10px 0 30px;
 }
 
 /* Button styling */
 .btn {
-    background-color: #c3a763;
+    background-color: #c79b2c;
     color: white;
     padding: 15px 30px;
     text-decoration: none;
@@ -65,56 +65,56 @@
 
 /* Media query for tablet devices */
 @media (max-width: 768px) {
-    .hero {
+    .Sec {
         padding: 0 10px;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    .hero-img {
+    .Sec-img {
         width: 70%;
         margin: 0 auto;
     }
 
-    .hero-text {
+    .Sec-text {
         top: 60%;
         right: 50%;
         transform: translate(50%, -50%);
     }
 
-    .hero h1 {
+    .Sec h1 {
         font-size: 6vw;
     }
 
-    .hero p {
+    .Sec p {
         font-size: 3vw;
     }
 }
 
 /* Media query for mobile devices */
 @media (max-width: 480px) {
-    .hero {
+    .Sec {
         padding: 0 5px;
         text-align: center;
     }
 
-    .hero-img {
+    .Sec-img {
         width: 90%;
         margin: 0 auto;
     }
 
-    .hero-text {
+    .Sec-text {
         position: static;
         transform: none;
         margin-top: 20px;
     }
 
-    .hero h1 {
+    .Sec h1 {
         font-size: 8vw;
     }
 
-    .hero p {
+    .Sec p {
         font-size: 4vw;
     }
 }

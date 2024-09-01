@@ -34,24 +34,17 @@
 .about img {
     background-size: cover;
     background-position: center;
-    width: 40%;
+    width: 30%;
     height: auto;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 50px;
+    transform: translate(-10%, 0%);
 }
 
-/* Vertical Text */
-.vertical-text {
-    
-    text-orientation: mixed;
-    font-size: 3rem;
-    color: #7a572b;
-    font-weight: bold;
-    text-align: center;
-}
+
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
