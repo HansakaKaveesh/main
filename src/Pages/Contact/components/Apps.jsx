@@ -7,6 +7,7 @@ import MainContent from "./MainContent";
 import Footer from "./Footer";
 import styles from "./Apps.module.css";
 
+
 const Apps = () => {
   return (
     <div className={styles.app}>

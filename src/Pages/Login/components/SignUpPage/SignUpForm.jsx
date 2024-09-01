@@ -25,7 +25,7 @@ function SignUpForm() {
         </div>
         <button type="submit" className={styles.submitButton}>Create my Account</button>
       </form>
-      <p className={styles.loginLink}>Already have an account?  <Link to="/" className={styles.loginLink}>Login here</Link></p>
+      <p className={styles.loginLink}>Already have an account?  <Link to="/Login" className={styles.loginLink}>Login here</Link></p>
     </section>
   );
 }

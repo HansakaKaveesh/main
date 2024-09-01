@@ -7,7 +7,6 @@
 .mainContent {
   display: flex;
   justify-content: space-between;
-  padding: 0px;
   flex-grow: 1;
 }
 

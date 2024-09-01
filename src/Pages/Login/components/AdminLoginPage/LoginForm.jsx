@@ -7,7 +7,7 @@ function LoginForm() {
     <section className={styles.loginSection}>
       <h1 className={styles.loginTitle}>LOGIN</h1>
       <div className={styles.userTypeToggle}>
-         <Link to="/" className={styles.userTypeButton}>USER</Link>
+         <Link to="/Login" className={styles.userTypeButton}>USER</Link>
         <button className={`${styles.userTypeButton} ${styles.active}`}>ADMIN</button>
       </div>
       <form className={styles.loginForm}>
