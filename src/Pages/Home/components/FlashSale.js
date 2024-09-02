@@ -4,7 +4,7 @@ import './FlashSale.css';
 function FlashSale() {
   return (
     <section className="flash-sale">
-      <img src="/img/Rectangle94.jpeg" alt="Flash Sale" />
+      <img src="/img/Home/Rectangle94.jpeg" alt="Flash Sale" />
       <div className="flash-sale-text">
         <h2>Custom Items</h2>
         <p>Flash Sale • 50% - 70% Selected Items. Only now</p>

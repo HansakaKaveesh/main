@@ -3,10 +3,10 @@ import './Products.css';
 
 const Products = () => {
     const items = [
-        { id: 1, src: 'img/Rectangle90.jpeg', alt: 'Custom Item 1', name: 'Scarf Collection' },
-        { id: 2, src: 'img/Rectangle90.jpeg', alt: 'Custom Item 2', name: 'Winter Essentials' },
-        { id: 3, src: 'img/Rectangle92.jpeg', alt: 'Custom Item 3', name: 'Bold Colors' },
-        { id: 4, src: 'img/Rectangle92.jpeg', alt: 'Custom Item 4', name: 'Autumn Vibes' },
+        { id: 1, src: 'img/Home/Rectangle90.jpeg', alt: 'Custom Item 1', name: 'Scarf Collection' },
+        { id: 2, src: 'img/Home/Rectangle90.jpeg', alt: 'Custom Item 2', name: 'Winter Essentials' },
+        { id: 3, src: 'img/Home/Rectangle92.jpeg', alt: 'Custom Item 3', name: 'Bold Colors' },
+        { id: 4, src: 'img/Home/Rectangle92.jpeg', alt: 'Custom Item 4', name: 'Autumn Vibes' },
         
     ];
 

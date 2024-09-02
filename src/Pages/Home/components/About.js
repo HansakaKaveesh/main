@@ -13,7 +13,7 @@ function About() {
           caliber of creatives, engineers, and ambassadors.
         </p>
       </div>
-      <img src="/IMG/Rectangle97.jpeg" alt="Fabric" />
+      <img src="/IMG/HomeAbout/Rectangle97.jpeg" alt="Fabric" />
     </section>
   );
 }

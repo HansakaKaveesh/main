@@ -10,28 +10,28 @@ const Team = () => {
         <div class="team-container">
             <div class="team-member">
                 <div class="image-container">
-                    <img src="/img/ceo.jpg" alt="Founder & CEO"/>
+                    <img src="/img/About/ceo.jpg" alt="Founder & CEO"/>
                 </div>
                 <h3>Founder & CEO</h3>
                 <p>ABCD EFGH</p>
             </div>
             <div class="team-member">
                 <div class="image-container">
-                    <img src="/img/ceo.jpg" alt="Creative Director"/>
+                    <img src="/img/About/ceo.jpg" alt="Creative Director"/>
                 </div>
                 <h3>Creative Director</h3>
                 <p>ABCD EFGH</p>
             </div>
             <div class="team-member">
                 <div class="image-container">
-                    <img src="/img/ceo.jpg" alt="Head of Marketing"/>
+                    <img src="/img/About/ceo.jpg" alt="Head of Marketing"/>
                 </div>
                 <h3>Head of Marketing</h3>
                 <p>ABCD EFGH</p>
             </div>
             <div class="team-member">
                 <div class="image-container">
-                    <img src="/img/ceo.jpg" alt="Social Media Manager"/>
+                    <img src="/img/About/ceo.jpg" alt="Social Media Manager"/>
                 </div>
                 <h3>Social Media Manager</h3>
                 <p>ABCD EFGH</p>
