@@ -10,17 +10,17 @@ import Footer from '../Home/components/Footer';
 
 function App() {
   const newInProducts = [
-    { imageSrc: '/product/1.jpg', itemName: 'Item Name', price: 'Rs. 2500' },
-    { imageSrc: '/product/2.jpg', itemName: 'Item Name', price: 'Rs. 2500' },
-    { imageSrc: '/product/3.jpg', itemName: 'Item Name', price: 'Rs. 2500' },
-    { imageSrc: '/product/4.jpg', itemName: 'Item Name', price: 'Rs. 2500' },
+    { imageSrc: '/1.jpg', itemName: 'Item Name', price: 'Rs. 2500' },
+    { imageSrc: '/2.jpg', itemName: 'Item Name', price: 'Rs. 2500' },
+    { imageSrc: '/3.jpg', itemName: 'Item Name', price: 'Rs. 2500' },
+    { imageSrc: '/4.jpg', itemName: 'Item Name', price: 'Rs. 2500' },
   ];
 
   const bestSellers = [
-    { imageSrc: '/product/3.jpg', itemName: 'Item Name', price: 'Rs. 2500' },
-    { imageSrc: '/product/5.jpg', itemName: 'Item Name', price: 'Rs. 2500' },
-    { imageSrc: '/product/2.jpg', itemName: 'Item Name', price: 'Rs. 2500' },
-    { imageSrc: '/product/1.jpg', itemName: 'Item Name', price: 'Rs. 2500' },
+    { imageSrc: '/3.jpg', itemName: 'Item Name', price: 'Rs. 2500' },
+    { imageSrc: '/5.jpg', itemName: 'Item Name', price: 'Rs. 2500' },
+    { imageSrc: '/2.jpg', itemName: 'Item Name', price: 'Rs. 2500' },
+    { imageSrc: '/1.jpg', itemName: 'Item Name', price: 'Rs. 2500' },
   ];
 
   return (

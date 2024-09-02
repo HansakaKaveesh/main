@@ -14,14 +14,14 @@ const AboutUs = () => {
             Glorious Textile started in the spring of 2008. Two friends had a vision to spread happiness by turning an everyday essential into a colorful design piece with a rigid standard of ultimate quality, craftmanship, and creativity. A concept now brought to perfection by the Happy Socks collective of creators.
             Glorious Textile started in the spring of 2008. Two friends had a vision to spread happiness by turning an everyday essential into a colorful design piece with a rigid standard of ultimate quality, craftmanship, and creativity. A concept now brought to perfection by the Happy Socks collective of creators.
           </p>
-          <img src="/img/About/pic1.png" alt="Who We Are" />
+          <img src="/pic1.png" alt="Who We Are" />
         </div>
       </div>
       
       <div className="section2">
         <h3>Our Mission</h3>
         <div className="content2">
-        <img src="/img/About/pic2.webp" alt="Our Mission" />
+        <img src="/pic2.webp" alt="Our Mission" />
           <p>
             Glorious Textile started in the spring of 2008. Two friends had a vision to spread happiness by turning an everyday essential into a colorful design piece with a rigid standard of ultimate quality, craftmanship, and creativity. A concept now brought to perfection by the Happy Socks collective of creators.
             Glorious Textile started in the spring of 2008. Two friends had a vision to spread happiness by turning an everyday essential into a colorful design piece with a rigid standard of ultimate quality, craftmanship, and creativity. A concept now brought to perfection by the Happy Socks collective of creators.
@@ -37,7 +37,7 @@ const AboutUs = () => {
             Glorious Textile started in the spring of 2008. Two friends had a vision to spread happiness by turning an everyday essential into a colorful design piece with a rigid standard of ultimate quality, craftmanship, and creativity. A concept now brought to perfection by the Happy Socks collective of creators.Glorious Textile started in the spring of 2008. Two friends had a vision to spread happiness by turning an everyday essential into a colorful design piece with a rigid standard of ultimate quality, craftmanship, and creativity. A concept now brought to perfection by the Happy Socks collective of creators.Glorious Textile started in the spring of 2008. Two friends had a vision to spread happiness by turning an everyday essential into a colorful design piece with a rigid standard of ultimate quality, craftmanship, and creativity. A concept now brought to perfection by the Happy Socks collective of creators.
             
           </p>
-          <img src="/img/About/pic3.jpg" alt="Customer Care" />
+          <img src="/pic3.jpg" alt="Customer Care" />
         </div>
       </div>
       
