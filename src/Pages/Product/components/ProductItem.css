@@ -1,0 +1,37 @@
+.product-item {
+    text-align: center;
+    margin: 10px;
+    width: 200px;
+    
+  }
+  
+  .product-item img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .product-name {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .product-price {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #8b5e3c;
+  }
+  
+  .shop-now {
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .shop-now:hover {
+    background-color: #ff1a1a;
+  }
+  

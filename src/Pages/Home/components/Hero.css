@@ -48,7 +48,7 @@
 }
 
 /* Button styling */
-.btn {
+.button {
     background-color: #c79b2c;
     color: white;
     padding: 15px 30px;
@@ -59,7 +59,7 @@
     transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+.button:hover {
     background-color: #a87b35;
 }
 
