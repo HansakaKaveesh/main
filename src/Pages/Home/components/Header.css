@@ -34,6 +34,22 @@
   border-radius: 0px;
 }
 
+.nav .login-btn {
+  background-color: #55401b;
+  color: white;
+  border: none;
+  padding:4px 4px;
+  border-radius: 0px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+
+
+
 .menu-icon {
   display: none;
   cursor: pointer;
@@ -62,40 +78,7 @@
   display: block;
 }
 
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #785c2bfb;
-  border-radius: 0px;
-  list-style: none;
-  margin: 0;
-  padding: 10px 0;
-  display: none; /* Hidden by default */
-  flex-direction: column;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-}
 
-.nav-menu li.dropdown:hover .dropdown-menu,
-.nav-menu li.dropdown .dropdown-menu.open {
-  display: flex; /* Show dropdown on hover or when open class is added */
-}
-
-.dropdown-menu li {
-  margin: 0;
-}
-
-.dropdown-menu li a {
-  color: white;
-  padding: 10px 20px;
-  white-space: nowrap;
-}
-
-.dropdown-menu li a:hover {
-  background-color: #af8748;
-  border-radius: 5px;
-}
 
 @media (max-width: 768px) {
   .menu-icon {

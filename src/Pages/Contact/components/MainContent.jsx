@@ -3,6 +3,7 @@
  */
 import React from "react";
 import styles from "./MainContent.module.css";
+import BackImage from "./BackImage";
 import LocationSection from "./LocationSection";
 import CompanyInfo from "./CompanyInfo";
 import ContactForm from "./ContactForm";
@@ -13,11 +14,18 @@ const MainContent = () => {
     <main className={styles.mainContent}>
       <div className={styles.contentWrapper}>
         <div className={styles.leftColumn}>
-          <LocationSection />
-        </div>
-        <div className={styles.rightColumn}>
+          <BackImage />
+          </div>
+          <div className={styles.rightColumn}>
           <CompanyInfo />
+          </div>
+          </div>
           <div className={styles.contentWrapper}>
+          <div className={styles.leftColumn}>
+            <LocationSection />
+          </div>
+        
+          
           <div className={styles.leftColumn}>
           <ContactInfo />
           </div>
@@ -25,8 +33,8 @@ const MainContent = () => {
           <ContactForm />
         </div>
         </div>
-        </div>
-      </div>
+      
+    
     </main>
   );
 };

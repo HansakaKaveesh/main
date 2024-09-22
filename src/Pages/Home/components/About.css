@@ -42,6 +42,7 @@
     justify-content: center;
     border-radius: 50px;
     transform: translate(-10%, 0%);
+    
 }
 
 
@@ -82,10 +83,13 @@
     .about-text, .about img {
         max-width: 100%;
         width: 100%;
+        
     }
 
     .about img {
         margin-bottom: 20px;
+        transform: translate(0%, 0%);
+        
     }
 
     .about-text h2 {
@@ -118,3 +122,4 @@
         text-align: center;
     }
 }
+

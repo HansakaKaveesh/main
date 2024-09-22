@@ -3,9 +3,9 @@ import './Hero.css';
 
 function Hero() {
   return (
-    <section className="Sec">
-      <img src="/img with blur.png" alt="Curtain" className="hero-img" />
-      <div className="hero-text">
+    <section className="Sect">
+      <img src="/img with blur.png" alt="Curtain" className="Sect-img" />
+      <div className="Sect-text">
         <img src="/Logo.png" alt="Curtain" className="logo" />
         <h1>Elevate Your Brand</h1>
         <p>Glorius Textile has been the go-to company since the 80's.</p>
