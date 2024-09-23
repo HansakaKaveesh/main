@@ -4,16 +4,16 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 20px;
+    padding: 50px 100px;
     background-color: #f3e2c6;
     box-sizing: border-box;
 }
 
 /* About Text */
 .about-text {
-    max-width: 50%;
+    max-width: 55%;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     box-sizing: border-box;
 }
 

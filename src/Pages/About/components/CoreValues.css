@@ -1,7 +1,8 @@
-/* src/components/CoreValues.css */
-.core-values {
-  padding: 40px 20px;
-  background-color: #f8f5f2; /* Light background for contrast */
+ /* src/components/CoreValues.css */
+.core-values-container {
+  padding: 20px 0px;
+  background-color:#f8f5f2; /* Light background for contrast */
+  width: 100%;
 }
 
 .core-values h2 {
@@ -10,14 +11,13 @@
   background-color: #62420E;
   color: #ffffff;
   padding: 10px 0; 
-  margin-bottom: 30px;
 }
 
 .core-values ul {
-  list-style: disc;
-  padding: 20px 20px;
-  max-width: 90%;
-  margin: 0 auto;
+  list-style: decimal;
+  padding: 10px 0px;
+  width: 100%;
+  margin: 20px auto ;
 }
 
 .core-values li {
@@ -25,26 +25,49 @@
   color: #030303;
   margin-bottom: 15px;
   line-height: 1.6;
+  padding: 0 10px;
+  text-align: center;
 }
 
-/* Media Queries for responsiveness */
-@media (min-width: 768px) {
-  .core-values ul {
-    padding: 40px;
-    max-width: 80%;
-  }
-
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
   .core-values h2 {
-    font-size: 3rem;
+    font-size: 1.75rem; /* Slightly smaller for tablets */
   }
-}
 
-@media (min-width: 1200px) {
   .core-values ul {
-    max-width: 70%;
+    margin: 30px auto; /* Adjust margin for smaller screens */
+    padding: 10px;
   }
 
   .core-values li {
-    font-size: 1.1rem;
+    font-size: 0.9rem; /* Slightly smaller text for smaller screens */
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .core-values-container {
+    padding: 2px 5px;
+    margin: 2px 1px;
+  }
+
+  .core-values h2 {
+    font-size: 1.5rem; /* Smaller heading on mobile */
+    padding: 10px 2px;
+    margin: 3px 1px;
+  }
+
+  .core-values ul {
+    margin: 2px 5px ; /* Smaller margin on mobile */
+    padding: 5px 15px;
+    align-items: left;
+  }
+
+  .core-values li {
+    font-size: 0.85rem; /* Further reduce text size on mobile */
+    line-height: 1.4;
+    padding: 5px 1px;
+    margin: 15px;
   }
 }

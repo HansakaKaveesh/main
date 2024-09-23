@@ -15,20 +15,8 @@ const Team = () => {
                 <h3>Founder & CEO</h3>
                 <p>ABCD EFGH</p>
             </div>
-            <div class="team-member">
-                <div class="image-container">
-                    <img src="/ceo.jpg" alt="Creative Director"/>
-                </div>
-                <h3>Creative Director</h3>
-                <p>ABCD EFGH</p>
-            </div>
-            <div class="team-member">
-                <div class="image-container">
-                    <img src="/ceo.jpg" alt="Head of Marketing"/>
-                </div>
-                <h3>Head of Marketing</h3>
-                <p>ABCD EFGH</p>
-            </div>
+            
+            
             <div class="team-member">
                 <div class="image-container">
                     <img src="/ceo.jpg" alt="Social Media Manager"/>

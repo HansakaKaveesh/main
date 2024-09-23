@@ -25,7 +25,7 @@ function Header() {
           <li><Link to="/Product">Product</Link></li>
           <li><Link to="/About">About Us</Link></li>
           <li><Link to="/Contact">Contact Us</Link></li>
-          <li><Link to="/Login">Login</Link></li>
+          <li><button class="login-btn"><Link to="/QUOTATION">QUOTATION</Link></button></li>
         </ul>
       </nav>
     </header>

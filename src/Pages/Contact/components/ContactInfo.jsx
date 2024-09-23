@@ -17,18 +17,18 @@ function ContactInfo() {
       <div className={styles.contactDetail}> 
       <div className={styles.contactInfo}> 
       <ContactDetail label="Address :">
-        123 Street name, <br />
-        City, <br />
-        Country
+        GLORIOUS FABRIC PVT LTD, <br />
+        182/C, <br />
+        KANDEWATTE ROAD MALWANA
       </ContactDetail>
       
       
      
-      <ContactDetail label="E-mail :">ncsgiuswgb@gmail.com</ContactDetail>
+      <ContactDetail label="E-mail :">info@gloriousfabric.lkExplore</ContactDetail>
       <h2 className={styles.phoneLabel}>Tele Phone Num :</h2>
       <p>
-        +1234567897 <br />
-        +3242768893
+       0776769398 <br />
+       0773315775
       </p>
       </div></div>
     </section>

@@ -3,6 +3,7 @@
  */
 .contactSection {
   margin-top: 10%;
+  margin-bottom: 25%;
 }
 
 .title {
@@ -15,7 +16,7 @@
 }
 
 .formGroup {
-  margin-bottom: 20px;
+  margin-bottom: 2%;
 }
 
 .label {
@@ -46,15 +47,16 @@
   background-color: rgba(192, 136, 37, 0.86);
   color: #fff;
   text-align: center;
-  padding: 15px 16px;
+  padding: 2% 4%;
   font: 700 32px/1 "Abhaya Libre", -apple-system, Roboto, Helvetica, sans-serif;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 105%;
 }
 
 @media (max-width: 991px) {
   .contactSection {
     margin-top: 40px;
+    margin-bottom: 25%;
   }
 }

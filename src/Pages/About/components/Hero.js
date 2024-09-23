@@ -6,7 +6,7 @@ function Hero() {
     <section className="Sec">
       <img src="/img with blur.png" alt="Curtain" className="hero-img" />
       <div className="hero-text">
-        <img src="/Logo.png" alt="Curtain" className="logo" />
+        <img src="/pic1.png" alt="Curtain" className="logo" />
         <h1>About Us</h1>
         <p>Glorious Textile started in the spring of 2008. </p>
         

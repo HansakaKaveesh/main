@@ -5,21 +5,26 @@ import './CoreValues.css';
 const CoreValues = () => {
   return (
     <section className="core-values">
+       <div className="core-values-container">
       <h2>Our Core Values</h2>
       <ul>
-        <li>Prioritize high-quality materials and construction in every piece of clothing.</li>
-        <li>Prioritize high-quality materials and construction in every piece of clothing.</li>
-        <li>Commit to eco -friendly practices, from sourcing materials to production methods,
-          aiming to reduce environmental impact.</li>
-        <li>Offer a diverse range of styles, sizes, and prices to cater to all customers, 
-          embracing different body types and fashion tastes.</li>
-        <li>Stay ahead of trends and continuously seek out new ways to enhance the shopping experience,
-          whether online or in-store.</li>
-        <li>Build strong connections with the local community through events, collaborations, and giving back.</li>
-        <li>Maintain a genuine brand identity that resonates with your target audience and 
-          reflects the true essence of your store.</li>
-        <li>Be open about sourcing, pricing, and business practices, fostering trust with customers.</li>  
+        <li><h3>Quality Craftsmanship</h3> 
+            <p>We are committed to offering the finest fabrics that ensure durability, comfort, and elegance in every stitch.</p></li>
+        <li><h3>Sustainability</h3> 
+            <p>We prioritize eco-friendly materials and practices, ensuring that our products and processes minimize environmental impact.</p></li>
+        <li><h3>Customer Satisfaction</h3> 
+            <p>Our customers are at the heart of everything we do. We strive to provide personalized service, ensuring a delightful shopping experience.</p></li>
+        <li><h3>Innovation and Creativity</h3> 
+            <p>We embrace the latest trends and technology in textiles, continuously evolving our collections to inspire creativity in our customers.</p></li>
+        <li><h3>Community Support</h3> 
+            <p> We believe in fostering strong relationships within our community by supporting local artisans and contributing to local initiatives.</p></li>
+        <li><h3>Affordability</h3> 
+            <p>We offer premium quality fabrics at competitive prices, ensuring that everyone has access to top-quality materials for their projects.</p></li>
+        <li><h3>ntegrity and Trust</h3>
+            <p> Transparency and honesty define our interactions with customers, suppliers, and partners, building trust through every transaction.</p></li>
+       
       </ul>
+      </div>
     </section>
   );
 };
