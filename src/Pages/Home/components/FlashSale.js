@@ -1,5 +1,7 @@
 import React from 'react';
-import './FlashSale.css'; 
+import './FlashSale.css';
+
+import { Link } from 'react-router-dom';
 
 function FlashSale() {
   return (
@@ -8,7 +10,8 @@ function FlashSale() {
       <div className="flash-sale-text">
         <h2>Custom Items</h2>
         <p>Flash Sale • 50% - 70% Selected Items. Only now</p>
-        <a href="#" className="btn">Shop Now</a>
+        <Link to="/QUOTATION"><a className="btn">QUOTATION</a></Link>
+        
       </div>
     </section>
   );

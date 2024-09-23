@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.css'; 
+import { Link } from 'react-router-dom';
 
 function Hero() {
   return (
@@ -9,7 +10,7 @@ function Hero() {
         <img src="/pic1.png" alt="Curtain" className="logo" />
         <h1>Elevate Your Brand</h1>
         <p>Glorius Textile has been the go-to company since the 80's.</p>
-        <a href="#" className="button">Realize Your Vision</a>
+        <Link to="/QUOTATION"><a className="button">QUOTATION</a></Link>
       </div>
     </section>
   );

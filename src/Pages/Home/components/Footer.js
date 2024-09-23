@@ -13,7 +13,7 @@ function Footer() {
         <div class="footer-section">
         <h2>Quick Links</h2>
           <ul>
-          <li><Link to="/">Home</Link></li>
+          
           <li><Link to="/Product">Product</Link></li>
           <li><Link to="/About">About Us</Link></li>
           <li><Link to="/Contact">Contact Us</Link></li>
@@ -24,9 +24,9 @@ function Footer() {
       <div class="footer-section">
       <h2>Follow Us</h2>
       <div className="social-icons">
-        <a href="#"><img src="/icon/Facebook.png" alt="Facebook" /></a>
-        <a href="#"><img src="/icon/Instergram.png" alt="Instagram" /></a>
-        <a href="#"><img src="/icon/Twiter.png" alt="Twitter" /></a>
+        <a href="https://web.facebook.com/profile.php?id=61561593119926"><img src="/icon/Facebook.png" alt="Facebook" /></a>
+        <a href="https://www.instagram.com/glorious_fabric/"><img src="/icon/Instergram.png" alt="Instagram" /></a>
+        
       </div>
       </div>  
       

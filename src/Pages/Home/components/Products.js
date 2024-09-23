@@ -1,5 +1,7 @@
 import React from 'react';
 import './Products.css'; 
+import { Link } from 'react-router-dom';
+
 
 const Products = () => {
     const items = [
@@ -17,7 +19,7 @@ const Products = () => {
                     <img src={item.src} alt={item.alt} />
                     <div className="overlay">
                         <h2>{item.name}</h2>
-                        <button>SHOP NOW</button>
+                        <Link to="/QUOTATION"><button>QUOTATION</button></Link>
                     </div>
                 </div>
             ))}
