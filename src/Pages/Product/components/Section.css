@@ -1,13 +1,38 @@
-.section {
-    padding: 20px;
-    background-color: #f5f5f5;
+.section1 {
+  padding: 0px;
+  background-color: #f5f5f5;
+  margin-top: 0%;
+}
+
+/* Use relative units like vw (viewport width) for a responsive title font size */
+.section1 h2 {
+  margin: 0 0 0;
+  font-size: 3vw; /* Responsive font size */
+  color: #fff;
+  text-align: center;
+  padding-left: 20px;
+  background-color: #8b5e3c;
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 768px) { /* Tablets and small devices */
+  .section1 {
+      padding: 0px;
+      margin-top: 0%;
   }
-  
-  .section-title {
-    margin: 0 0 20px;
-    font-size: 22px;
-    color: #8b5e3c;
-    text-align: left;
-    padding-left: 20px;
+  .section1 h2 {
+      font-size: 3vw; /* Larger font size for smaller screens */
+      padding-left: 10px;
   }
-  
+}
+
+@media (max-width: 480px) { /* Mobile phones */
+  .section1 {
+      padding: 0px;
+      margin-top: 0%;
+  }
+  .section1 h2 {
+      font-size: 6vw;
+      padding-left: 5px;
+  }
+}

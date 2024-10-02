@@ -3,29 +3,27 @@ import './Header.css';
 import { Link } from 'react-router-dom';
 
 function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
-  const toggleDropdown = () => {
-    setDropdownOpen(!dropdownOpen);
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
-    <header className="header">
-      <nav className="nav">
-        <div className="menu-icon" onClick={toggleMenu}>
-          &#9776; {/* Hamburger icon */}
+    <header className="head">
+      <nav className="navi">
+        
+        <div className={`menu-icon ${isMobileMenuOpen ? "open" : ""}`} onClick={toggleMobileMenu}>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
         </div>
-        <ul className={menuOpen ? "nav-menu open" : "nav-menu"}>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/Product">Product</Link></li>
-          <li><Link to="/About">About Us</Link></li>
-          <li><Link to="/Contact">Contact Us</Link></li>
-          <li><button class="login-btn"><Link to="/QUOTATION">QUOTATION</Link></button></li>
+        <ul className={`navi-links ${isMobileMenuOpen ? "active" : ""}`}>
+          <li><Link to="/" onClick={toggleMobileMenu}>Home</Link></li>
+          <li><Link to="/Product" onClick={toggleMobileMenu}>Product</Link></li>
+          <li><Link to="/About" onClick={toggleMobileMenu}>About Us</Link></li>
+          <li><Link to="/Contact" onClick={toggleMobileMenu}>Contact Us</Link></li>
+          <li><Link to="/QUOTATION" onClick={toggleMobileMenu}>Quotation</Link></li>
         </ul>
       </nav>
     </header>

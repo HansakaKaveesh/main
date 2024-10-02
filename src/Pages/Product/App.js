@@ -10,24 +10,23 @@ import Footer from './components/Footer';
 
 function App() {
   const newInProducts = [
-    { imageSrc: '/1.jpg', itemName: 'Item Name', price: 'Rs. 2500' },
-    { imageSrc: '/2.jpg', itemName: 'Item Name', price: 'Rs. 2500' },
-    { imageSrc: '/3.jpg', itemName: 'Item Name', price: 'Rs. 2500' },
-    { imageSrc: '/4.jpg', itemName: 'Item Name', price: 'Rs. 2500' },
+    { imageSrc: '/1.jpg', itemName: 'Item Name' },
+    { imageSrc: '/2.jpg', itemName: 'Item Name' },
+    { imageSrc: '/3.jpg', itemName: 'Item Name' },
+    { imageSrc: '/2.jpg', itemName: 'Item Name' },
   ];
 
   const bestSellers = [
-    { imageSrc: '/3.jpg', itemName: 'Item Name', price: 'Rs. 2500' },
-    { imageSrc: '/5.jpg', itemName: 'Item Name', price: 'Rs. 2500' },
-    { imageSrc: '/2.jpg', itemName: 'Item Name', price: 'Rs. 2500' },
-    { imageSrc: '/1.jpg', itemName: 'Item Name', price: 'Rs. 2500' },
+    { imageSrc: '/4.jpg', itemName: 'Item Name' },
+    { imageSrc: '/5.jpg', itemName: 'Item Name' },
+    { imageSrc: '/6.jpg', itemName: 'Item Name' },
+    { imageSrc: '/7.jpg', itemName: 'Item Name' },
   ];
 
   return (
     <div className="app">
       <Hero/>
       <Header />
-      <SearchBox />
       <Section title="New In">
         <ProductList products={newInProducts} />
       </Section>

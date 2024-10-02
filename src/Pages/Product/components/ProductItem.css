@@ -1,11 +1,12 @@
-.product-item {
+.product-items {
     text-align: center;
     margin: 10px;
     width: 200px;
+    padding: 10px;
     
   }
   
-  .product-item img {
+  .product-items img {
     max-width: 100%;
     border-radius: 5px;
   }

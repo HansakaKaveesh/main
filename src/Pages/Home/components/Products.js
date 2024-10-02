@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 
 const Products = () => {
     const items = [
-        { id: 1, src: '/Rectangle90.jpeg', alt: 'Custom Item 1', name: 'Scarf Collection' },
-        { id: 2, src: '/Rectangle90.jpeg', alt: 'Custom Item 2', name: 'Winter Essentials' },
-        { id: 3, src: '/Rectangle92.jpeg', alt: 'Custom Item 3', name: 'Bold Colors' },
-        { id: 4, src: '/Rectangle92.jpeg', alt: 'Custom Item 4', name: 'Autumn Vibes' },
+        { id: 1, src: '/1.jpg', alt: 'Custom Item 1', name: 'Scarf Collection' },
+        { id: 2, src: '/2.jpg', alt: 'Custom Item 2', name: 'Winter Essentials' },
+        { id: 3, src: '/4.jpg', alt: 'Custom Item 3', name: 'Bold Colors' },
+        { id: 4, src: '/5.jpg', alt: 'Custom Item 4', name: 'Autumn Vibes' },
         
     ];
 

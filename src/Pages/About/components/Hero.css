@@ -22,10 +22,17 @@
     object-fit: cover;
 }
 
+.logo1 {
+    aspect-ratio: 1.42;
+    object-fit: contain;
+    width: 215px;
+    transform: translate(0%, -30%);
+  }
+
 /* Hero text styling */
 .hero-text {
     position: absolute;
-    top: 50%;
+    top: 46.5%;
     right: 10%;
     transform: translateY(-50%);
     text-align: right;

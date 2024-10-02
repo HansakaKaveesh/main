@@ -1,13 +1,14 @@
 import React from 'react';
 import './ProductItem.css'; // Optional: separate CSS for product item
+import { Link } from 'react-router-dom';
 
 function ProductItem({ imageSrc, itemName, price }) {
   return (
-    <div className="product-item">
+    <div className="product-items">
       <img src={imageSrc} alt={itemName} />
       <p>{itemName}</p>
-      <p>{price}</p>
-      <button>Shop Now</button>
+      <Link to="/QUOTATION"><button>Inquiry</button></Link>
+      
     </div>
   );
 }

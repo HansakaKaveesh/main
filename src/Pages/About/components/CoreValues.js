@@ -20,7 +20,7 @@ const CoreValues = () => {
             <p> We believe in fostering strong relationships within our community by supporting local artisans and contributing to local initiatives.</p></li>
         <li><h3>Affordability</h3> 
             <p>We offer premium quality fabrics at competitive prices, ensuring that everyone has access to top-quality materials for their projects.</p></li>
-        <li><h3>ntegrity and Trust</h3>
+        <li><h3>Integrity and Trust</h3>
             <p> Transparency and honesty define our interactions with customers, suppliers, and partners, building trust through every transaction.</p></li>
        
       </ul>
