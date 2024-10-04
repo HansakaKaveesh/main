@@ -1,0 +1,124 @@
+/* Hero section styling */
+.Sect {
+    position: relative;
+    text-align: right;
+    color: #333;
+    padding: 0px 20px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+.logo {
+    aspect-ratio: 1.42;
+    object-fit: contain;
+    width: 215px;
+    transform: translate(0%, -30%);
+  }
+
+/* Hero image styling */
+.Sect-img {
+    width: 50%;
+    max-height: 100%;
+    margin-right: 50%;
+    transform: translate(0%, -15%);
+    object-fit: cover;
+}
+
+/* Hero text styling */
+.Sect-text {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    text-align: right;
+}
+
+.Sect h1 {
+    font-size: 4vw;
+    margin: 0;
+}
+
+.Sect p {
+    font-size: 1.5vw;
+    margin: 10px 0 30px;
+}
+
+/* Button styling */
+.button {
+    background-color: #c79b2c;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #a87b35;
+}
+
+/* Media query for tablet devices */
+@media (max-width: 768px) {
+    .Sect {
+        padding: 0 10px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Sect-img {
+        width: 70%;
+        margin: 0 auto;
+        transform: translate(-20%, -40%);
+    }
+
+    .Sect-text {
+        top: 60%;
+        right: 50%;
+        transform: translate(80%, -40%);
+    }
+    
+    .Sect h1 {
+        font-size: 6vw;
+        transform: translate(-0%, -50%);
+    }
+
+    .Sect p {
+        font-size: 3vw;
+        transform: translate(-0%, -90%);
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    .Sect {
+        padding: 0 5px;
+        text-align: center;
+    }
+
+    .Sect-img {
+        width: 90%;
+        margin: 0 auto;
+        transform: translate(-0%, -10%);
+    }
+
+    .Sect-text {
+        position: static;
+        transform: none;
+        margin-top: 20px;
+    }
+
+    .Sect h1 {
+        font-size: 8vw;
+    }
+
+    .Sect p {
+        font-size: 4vw;
+    }
+}

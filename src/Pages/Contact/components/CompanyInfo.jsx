@@ -12,10 +12,11 @@ const CompanyInfo = () => {
         alt="Company logo"
         className={styles.logo}
       />
+      <h1>Contact US</h1>
       <p className={styles.description}>
-        GLORIUS TEXTILE HAS BEEN THE GO-TO COMPANY SINCE THE 80'S.
+        Welcome to Glorious Fbric Pvt Ltd.
       </p>
-      <button className={styles.ctaButton}>REALIZE YOUR VISION</button>
+      
     </section>
   );
 };

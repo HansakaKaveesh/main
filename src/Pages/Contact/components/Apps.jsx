@@ -10,9 +10,9 @@ import styles from "./Apps.module.css";
 const Apps = () => {
   return (
     <div className={styles.app}>
-      <Header />
+      
       <MainContent />
-      <Footer />
+      
     </div>
   );
 };

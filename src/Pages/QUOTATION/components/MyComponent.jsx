@@ -63,7 +63,7 @@ export default function MyComponent() {
               <div className={styles.column}>
                 <img
                   loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/d7f99b99893dd9e06a74c7e501dccb2770bfbdb8de8253938cbd597b350b83a7"
+                  src="img with blur.png"
                   className={styles.img}
                   alt="Quotation image"
                 />
@@ -102,19 +102,15 @@ export default function MyComponent() {
                     required
                   />
                   <div className={styles.wrapper2} />
+                  <button type="submit" className={styles.button} onClick={handleSubmit} disabled={loading}>
+              {loading ? "Sending..." : "Request a Quotation"}
+            </button>
                 </div>
               </div>
             </div>
           </div>
-          <div className={styles.div6}>
-            <div className={styles.gloriusTextileHasBeenTheGoToCompanySinceThe80S}>
-              GLORIUS TEXTILE HAS BEEN THE GO-TO COMPANY SINCE THE 80'S.
-            </div>
-            <button type="submit" className={styles.button} onClick={handleSubmit} disabled={loading}>
-              {loading ? "Sending..." : "Request a Quotation"}
-            </button>
-          </div>
-          <div className={styles.realizeYourVision}>REALIZE YOUR VISION</div>
+          
+          
         </div>
         <Footer />
       </div>
