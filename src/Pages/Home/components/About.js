@@ -18,7 +18,7 @@ function About() {
         Ltd. 
         </p>
       </div>
-      <img src="/AboutPIC.jpeg" alt="Fabric" />
+      <img src="/AboutPIC.png" alt="Fabric" />
     </section>
   );
 }
