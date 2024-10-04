@@ -18,8 +18,8 @@ app.get('/', (req, res) => {
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'hansakakaveesh2@gmal.com', // Hardcoded email
-    pass: 'zfernqktgfrhczzk', // Hardcoded password
+    user: 'textailslwijesinghe@gmail.com', // Hardcoded email
+    pass: 'mfirnuajhxlfyjcc', // Hardcoded password
   },
 });
 
@@ -33,7 +33,7 @@ app.post('/request-email', (req, res) => {
 
   const mailOptions = {
     from: email,
-    to: 'hansakakaveesh2@gmal.com', // Hardcoded recipient email
+    to: 'textailslwijesinghe@gmail.com', // Hardcoded recipient email
     subject: 'Quotation Request',
     text: `Quotation request from: ${email}\n\n${description}`,
   };
