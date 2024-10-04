@@ -7,7 +7,7 @@ const AboutUs = () => {
     <div className="about-us-container">
       <h2>About Us</h2>
       
-      <div className="section1">
+      <div className="sectio1">
         <h3>Who We Are</h3>
         <div className="conten1">
           <p>
@@ -17,7 +17,7 @@ const AboutUs = () => {
         </div>
       </div>
       
-      <div className="section2">
+      <div className="sectio2">
         <h3>Our Mission</h3>
         <div className="conten2">
         <img src="/pic2.png" alt="Our Mission" className='Our' />
@@ -28,7 +28,7 @@ const AboutUs = () => {
         </div>
       </div>
       
-      <div className="section3">
+      <div className="sectio3">
         <h3>We are ready to support your projects...</h3>
         <div className="conten3">
           <p>

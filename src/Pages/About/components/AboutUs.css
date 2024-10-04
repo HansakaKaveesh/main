@@ -18,14 +18,15 @@
 }
 
 /* Sections */
-.section1, .section2, .section3 {
-  margin: 30px 0;
+.sectio1, .sectio2, .sectio3 {
+  margin: 40px 0;
   padding: 1px 5%;
   text-align: center;
+  
 }
 
 /* Section Headings */
-.section1 h3, .section2 h3, .section3 h3 {
+.sectio1 h3, .sectio2 h3, .sectio3 h3 {
   font-size: 1.8rem;
   color: #000;
   text-transform: uppercase;
@@ -60,11 +61,11 @@
 /* Media Queries for Responsiveness */
 @media (min-width: 768px) {
   /* Adjust Heading Alignment */
-  .section1 h3 {
+  .sectio1 h3 {
     text-align: center;
   }
-  .section2 h3, .section3 h3 {
-    text-align: left;
+  .sectio2 h3, .sectio3 h3 {
+    text-align: center;
   }
 
   /* Flex Direction for Larger Screens */
