@@ -30,11 +30,11 @@
   color: #000;
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 /* Content Wrappers */
-.content1, .content2, .content3 {
+.conten1, .conten2, .conten3 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,14 +43,14 @@
 }
 
 /* Images */
-.content1 img, .content2 img, .content3 img {
-  max-width: 100%;
+.Who, .Our , .Us {
+  width: 40%;
   border-radius: 4px;
   margin: 0px 0;
 }
 
 /* Text Content */
-.content1 p, .content2 p, .content3 p {
+.conten1 p, .conten2 p, .conten3 p {
   line-height: 1.6;
   text-align: justify;
   margin: 0 20px;
@@ -68,21 +68,30 @@
   }
 
   /* Flex Direction for Larger Screens */
-  .content1, .content2, .content3 {
+  .conten1, .conten2, .conten3 {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start; /* Align top for better alignment */
   }
 
   /* Adjust Image and Text Alignment on Larger Screens */
-  .content1 img, .content2 img, .content3 img {
-    max-width: 45%;
+  .Who, .Our , .Us {
+    max-width: 50%;
     margin-bottom: 0;
   }
 
   /* Text Alignment on Larger Screens */
-  .content1 p, .content2 p, .content3 p {
+  .conten1 p, .conten2 p, .conten3 p {
     flex: 1;
     margin: 0 40px;
+  }
+
+
+}
+
+@media (max-width: 480px){
+  .Who, .Our , .Us {
+    width: 100%;
+    margin-bottom: 0;
   }
 }
