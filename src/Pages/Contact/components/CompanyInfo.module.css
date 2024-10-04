@@ -62,8 +62,8 @@
   }
 
   .logo {
-    width: 20vw; /* Adjust logo size for smaller screens */
-    max-width: 180px; /* Limit max size */
+    width: 80vw; /* Adjust logo size for smaller screens */
+    max-width: 500px; /* Limit max size */
   }
 
   .description {
@@ -76,47 +76,3 @@
   }
 }
 
-@media (max-width: 768px) {
-  .companyInfo {
-    align-items: center; /* Center content for smaller screens */
-    margin-top: 2rem;
-  }
-
-  .logo {
-    width: 25vw; /* Adjust logo size for tablets */
-    max-width: 160px;
-  }
-
-  .description {
-    font-size: 1rem;
-  }
-
-  .ctaButton {
-    margin: 2rem 0; /* Center the button */
-    width: 100%; /* Full width button */
-    padding: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .companyInfo {
-    margin-top: 1.5rem;
-    align-items: center;
-  }
-
-  .logo {
-    width: 35vw; /* Smaller logo size on mobile */
-    max-width: 140px;
-  }
-
-  .description {
-    font-size: 0.9rem; /* Smaller text for mobile */
-  }
-
-  .ctaButton {
-    font-size: 1.2rem; /* Smaller button text */
-    width: 90%; /* Full width with some margin */
-    margin: 1rem 0;
-    padding: 1rem;
-  }
-}

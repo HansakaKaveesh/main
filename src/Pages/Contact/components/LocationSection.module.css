@@ -12,15 +12,15 @@
   max-height: 100%;
   padding: 0px, 20px;
   height: 80vh;
-  width: 125%;
+  width: 100%;
   justify-content: center;
 }
 
 .companyImage {
   aspect-ratio: 0.95;
   object-fit: contain;
-  width: 730px;
-  transform: translate(0%, -5%);
+  width: 700px;
+  transform: translate(15%, -5%);
   
  
 }
@@ -44,6 +44,15 @@
 @media (max-width: 991px) {
   .locationInfo {
     margin-top: 40px;
-    padding: 0 20px;
+    padding: 0 10%;
+    align-items: center;
   }
+
+  .companyImage{
+    object-fit: contain;
+  width: 400px;
+  transform: translate(0%, -23%);
+  justify-content: center;
+  }
+
 }

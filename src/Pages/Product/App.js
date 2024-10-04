@@ -10,10 +10,10 @@ import Footer from './components/Footer';
 
 function App() {
   const newInProducts = [
-    { imageSrc: '/1.jpg', itemName: 'Item Name' },
-    { imageSrc: '/2.jpg', itemName: 'Item Name' },
     { imageSrc: '/3.jpg', itemName: 'Item Name' },
-    { imageSrc: '/2.jpg', itemName: 'Item Name' },
+    { imageSrc: '/1.jpg', itemName: 'Item Name' },
+    { imageSrc: '/3.jpg', itemName: 'Item Name' },
+    { imageSrc: '/1.jpg', itemName: 'Item Name' },
   ];
 
   const bestSellers = [

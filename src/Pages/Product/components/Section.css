@@ -7,11 +7,11 @@
 /* Use relative units like vw (viewport width) for a responsive title font size */
 .section1 h2 {
   margin: 0 0 0;
-  font-size: 3vw; /* Responsive font size */
+  font-size: 2vw; /* Responsive font size */
   color: #fff;
   text-align: center;
-  padding-left: 20px;
-  background-color: #8b5e3c;
+  padding: 0px;
+  background-color: #b98965;
 }
 
 /* Media queries for different screen sizes */
