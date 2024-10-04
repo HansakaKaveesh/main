@@ -1,26 +1,56 @@
-import * as React from "react";
-import { useState } from 'react'; // Import useState hook
+import * as React from "react"; 
+import { useState } from 'react';
+import axios from 'axios'; // Import Axios for making API requests
 import styles from './MyComponent.module.css';
-import Footer from './Footer';  // Import Footer as a React component
-import './Footer.css';  // Import CSS for styling (optional, if needed)
+import Footer from './Footer';
+import './Footer.css';
 import Header1 from './Header1';
 
 export default function MyComponent() {
-  // Define state variables to capture form input
   const [email, setEmail] = useState("");
   const [description, setDescription] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
-  // Handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent page reload
-    if (email && description) {
-      console.log("Email:", email);
-      console.log("Description:", description);
-      alert("Form submitted successfully!");
-    } else {
-      alert("Please fill in all fields!");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setErrorMessage(""); // Clear previous error messages
 
+    // Validate email format
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      setErrorMessage("Please enter a valid email address.");
+      return;
     }
+
+    // Validate description length
+    if (description.length < 10) {
+      setErrorMessage("Description must be at least 10 characters long.");
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      // Use axios to send the POST request to the backend
+      const response = await axios.post('http://localhost:5000/request-email', {
+        email,
+        description,
+      });
+
+      if (response.status === 200) {
+        alert("Quotation request sent successfully!");
+        setEmail(""); // Clear the input fields
+        setDescription("");
+      } else {
+        alert("Failed to send quotation request. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error sending request:", error.response ? error.response.data : error.message);
+      setErrorMessage("There was an error submitting your request. Please try again.");
+    }
+
+    setLoading(false); // End the loading state
   };
 
   return (
@@ -33,54 +63,61 @@ export default function MyComponent() {
               <div className={styles.column}>
                 <img
                   loading="lazy"
-                  src="img with blur.png"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/d7f99b99893dd9e06a74c7e501dccb2770bfbdb8de8253938cbd597b350b83a7"
                   className={styles.img}
+                  alt="Quotation image"
                 />
               </div>
               <div className={styles.column2}>
                 <img
                   loading="lazy"
-                  srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/fb0f4408458057004673e69632b769a14759e57120a7e7f5f72d67e709448500?placeholderIfAbsent=true&apiKey=170b590e187e4beabe3f2ef7100234b5&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/fb0f4408458057004673e69632b769a14759e57120a7e7f5f72d67e709448500?placeholderIfAbsent=true&apiKey=170b590e187e4beabe3f2ef7100234b5&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/fb0f4408458057004673e69632b769a14759e57120a7e7f5f72d67e709448500?placeholderIfAbsent=true&apiKey=170b590e187e4beabe3f2ef7100234b5&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/fb0f4408458057004673e69632b769a14759e57120a7e7f5f72d67e709448500?placeholderIfAbsent=true&apiKey=170b590e187e4beabe3f2ef7100234b5&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/fb0f4408458057004673e69632b769a14759e57120a7e7f5f72d67e709448500?placeholderIfAbsent=true&apiKey=170b590e187e4beabe3f2ef7100234b5&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/fb0f4408458057004673e69632b769a14759e57120a7e7f5f72d67e709448500?placeholderIfAbsent=true&apiKey=170b590e187e4beabe3f2ef7100234b5&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/fb0f4408458057004673e69632b769a14759e57120a7e7f5f72d67e709448500?placeholderIfAbsent=true&apiKey=170b590e187e4beabe3f2ef7100234b5&width=2000 2000w"
+                  srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/fb0f4408458057004673e69632b769a14759e57120a7e7f5f72d67e709448500"
                   className={styles.img2}
+                  alt="Quotation image 2"
                 />
               </div>
               <div className={styles.column3}>
                 <div className={styles.div5}>
-                  <div className={styles.sendQuotation}>SEND QUOTATION</div>
+                  <div className={styles.requestQuotation}>REQUEST A QUOTATION</div>
+                  {errorMessage && <div className={styles.error}>{errorMessage}</div>} {/* Display error message */}
                   <div className={styles.inputFieldWithLabel}>
-                      <div className={styles.label}>Email</div>
-                      <input
-                        type="email"
-                        className={styles.inputField}
-                        value={email} // Bind state to input value
-                        onChange={(e) => setEmail(e.target.value)} // Update state on input change
-                        required // Ensure the field is required for form submission
-                      />
-                      <div className={styles.wrapper} />
-                    </div>
+                    <div className={styles.label}>Email</div>
+                    <input
+                      type="email"
+                      className={styles.inputField}
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      required
+                    />
+                    <div className={styles.wrapper} />
+                  </div>
                   <div className={styles.inputFieldWithLabel2}>
                     <div className={styles.label2}>Description</div>
                   </div>
                   <input
                     type="text"
                     className={styles.inputField2}
-                    value={description} // Bind state to input value
-                    onChange={(e) => setDescription(e.target.value)} // Update state on input change
-                    required // Ensure the field is required for form submission
-                    
+                    value={description}
+                    onChange={(e) => setDescription(e.target.value)}
+                    required
                   />
                   <div className={styles.wrapper2} />
-                  <button type="submit" className={styles.button} onClick={handleSubmit}>
-              send a quotation
-            </button>
                 </div>
               </div>
             </div>
           </div>
-          
+          <div className={styles.div6}>
+            <div className={styles.gloriusTextileHasBeenTheGoToCompanySinceThe80S}>
+              GLORIUS TEXTILE HAS BEEN THE GO-TO COMPANY SINCE THE 80'S.
+            </div>
+            <button type="submit" className={styles.button} onClick={handleSubmit} disabled={loading}>
+              {loading ? "Sending..." : "Request a Quotation"}
+            </button>
+          </div>
+          <div className={styles.realizeYourVision}>REALIZE YOUR VISION</div>
         </div>
-        <Footer /> {/* Render the Footer component */}
+        <Footer />
       </div>
-    </>
-  );
+    </>
+  );
 }

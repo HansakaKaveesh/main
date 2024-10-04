@@ -72,7 +72,6 @@
   object-fit: contain;
   object-position: center;
   width: 100%;
-  margin-top: -20px;
 }
 @media (max-width: 991px) {
   .img {
@@ -90,8 +89,6 @@
 @media (max-width: 991px) {
   .column2 {
     width: 100%;
-    align-items: center;
-    margin-left: 0px;
   }
 }
 .img2 {
@@ -117,8 +114,6 @@
 @media (max-width: 991px) {
   .column3 {
     width: 100%;
-    margin-left: 0px;
-    align-items: center;
   }
 }
 .div5 {
@@ -302,8 +297,8 @@
   padding: 2px 110px 10px;
   padding-left: 9%;
   padding-right: 9%;
-  margin-right: -30px;
-  width: 100%;
+  margin-left: -30px;
+  
   
   
   font: 32px/1 Abhaya Libre, -apple-system, Roboto, Helvetica,
@@ -313,8 +308,7 @@
   .button {
     max-width: 100%;
     padding-right: 30px 30px;
-    margin-left: 0%;
-    
+    margin-left: 50px;
   }
 }
 .realizeYourVision {
@@ -487,8 +481,7 @@
     width: 100%;
   }
 }
-.div14 {
-}
+
 @media (max-width: 991px) {
   .div14 {
     max-width: 100%;
