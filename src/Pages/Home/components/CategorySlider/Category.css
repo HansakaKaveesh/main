@@ -33,7 +33,7 @@
   background-color: #c00600;
   color: white;
   border: none;
-  padding: 10px 15px;
+  padding: 10px 115px;
   cursor: pointer;
   font-size: 14px;
   border-radius: 5px;
@@ -58,8 +58,8 @@
   }
 
   .buy-now-btn {
-    width: 100%; /* Full-width button on smaller screens */
-    padding: 10px 15px;
+   
+    padding: 10px 50px;
   }
   .category-section {
     margin-right: 25px;
