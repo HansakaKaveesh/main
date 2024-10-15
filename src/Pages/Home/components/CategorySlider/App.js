@@ -9,9 +9,9 @@ const categories = [
     name: "Items",
     items: [
       { name: "Item 1", image: "/7.jpg" },
-      { name: "Item 2", image: "/Rectangle92.jpeg" },
+      { name: "Item 2", image: "/Rectangle92.jpg" },
       { name: "Item 3", image: "/7.jpg" },
-      { name: "Item 4", image: "/Rectangle92.jpeg" },
+      { name: "Item 4", image: "/Rectangle93.jpg" },
     ],
   },
   
