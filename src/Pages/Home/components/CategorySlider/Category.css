@@ -1,0 +1,97 @@
+.category-section {
+  margin-right: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+  
+  
+}
+
+.item-card {
+  padding: 0px;
+  text-align: center;
+  -webkit-text-fill-color: #ffffff;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  
+  
+}
+
+.item-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  object-fit: cover;
+  margin: 20px auto; /* Auto margin to center the image */
+  display: block;
+  }
+
+
+
+.buy-now-btn {
+  background-color: #c00600;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-top: 0px;
+}
+
+.buy-now-btn:hover {
+  background-color: #ff0000;
+}
+.all123{
+  background-color: #775621;
+}
+
+@media (max-width: 768px) {
+  .category-section {
+    margin: 0 20px; /* Less margin on smaller screens */
+  }
+
+  .item-card img {
+    max-width: 100%;
+    height: 150px; /* Let height adjust for responsiveness */
+  }
+
+  .buy-now-btn {
+    width: 100%; /* Full-width button on smaller screens */
+    padding: 10px 15px;
+  }
+  .category-section {
+    margin-right: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+    
+    
+  }
+}
+
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 18px; /* Scale down the font size */
+  }
+
+  .buy-now-btn {
+    font-size: 12px; /* Smaller button text */
+    padding: 10px 15px;
+  }
+
+  .item-card img {
+    height:150px; /* Automatically adjusts height on very small screens */
+    
+  }
+
+  .category-section {
+    margin-right: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+    
+    
+  }
+}
