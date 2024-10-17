@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from './components/Hero';
-import SearchBox from './components/SearchBox';
+
 import Section from './components/Section';
 import ProductList from './components/ProductList';
 import Header from './components/Header'

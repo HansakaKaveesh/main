@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './MainSection.css'; // Make sure to create a CSS file for styling
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import emailjs from 'emailjs-com';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -20,8 +21,25 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic (send the form data to server or email)
-    console.log(formData);
+
+    // EmailJS integration
+    emailjs.send(
+      'service_oa3pgka',  // Replace with your EmailJS service ID
+      'template_hea36es',  // Replace with your EmailJS template ID
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message
+      },
+      'aMdXsgx7jLbgmXJeJ' // Replace with your EmailJS public key
+    )
+    .then((result) => {
+      console.log(result.text);
+      alert("Message sent successfully!");
+    }, (error) => {
+      console.log(error.text);
+      alert("Failed to send message, please try again later.");
+    });
   };
 
   return (
@@ -48,7 +66,7 @@ const ContactUs = () => {
             />
             <textarea
               name="message"
-              placeholder="Massage"
+              placeholder="Message"
               value={formData.message}
               onChange={handleChange}
               required
@@ -58,13 +76,13 @@ const ContactUs = () => {
         </div>
         <div className="contact-info1">
           <p>
-            <FontAwesomeIcon icon={faMapMarkerAlt} />GLORIOUS FABRIC PVT LTD,182/C,KANDEWATTE ROAD MALWANA
+            <FontAwesomeIcon icon={faMapMarkerAlt} /> GLORIOUS FABRIC PVT LTD, 182/C, KANDEWATTE ROAD MALWANA
           </p>
           <p>
-            <FontAwesomeIcon icon={faEnvelope} />info@gloriousfabric.lkExplore
+            <FontAwesomeIcon icon={faEnvelope} /> info@gloriousfabric.lk
           </p>
           <p>
-            <FontAwesomeIcon icon={faPhone} />0776769398 / 0773315775
+            <FontAwesomeIcon icon={faPhone} /> 0776769398 / 0773315775
           </p>
         </div>
       </div>
