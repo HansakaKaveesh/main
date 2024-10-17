@@ -81,6 +81,19 @@ textarea {
   background-color: #b98c34;
 }
 
+.success-message258 {
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.error-message258 {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
 /* Responsive design for tablets and mobile */
 @media only screen and (max-width: 768px) {
   .form-container258 {

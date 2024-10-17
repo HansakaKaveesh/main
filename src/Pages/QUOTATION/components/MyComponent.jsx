@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
-import './QuotationForm.css'; // Create or update this CSS file for styling
-import logo from './pic1.png'; // Path to your logo
-import curtain from './img with blur.png'; // Path to the curtain image
+import emailjs from 'emailjs-com'; // Import emailjs
+import './QuotationForm.css';
+import logo from './pic1.png';
+import curtain from './img with blur.png';
 
 const QuotationForm = () => {
   const [formData, setFormData] = useState({
     email: '',
     description: ''
   });
+
+  const [successMessage, setSuccessMessage] = useState(''); // To display success/failure message
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,7 +23,31 @@ const QuotationForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+
+    // EmailJS parameters
+    const templateParams = {
+      email: formData.email,
+      description: formData.description
+    };
+
+    // Use EmailJS to send the email
+    emailjs.send(
+      'service_oa3pgka',  // Replace with your EmailJS Service ID
+      'template_2hjolph', // Replace with your EmailJS Template ID
+      templateParams,
+      'aMdXsgx7jLbgmXJeJ'      // Replace with your EmailJS User ID
+    )
+    .then((response) => {
+      console.log('SUCCESS!', response.status, response.text);
+      setSuccessMessage('Your quotation request was sent successfully!');
+      setErrorMessage('');
+      setFormData({ email: '', description: '' }); // Clear form fields after success
+    })
+    .catch((err) => {
+      console.log('FAILED...', err);
+      setErrorMessage('Failed to send the request. Please try again.');
+      setSuccessMessage('');
+    });
   };
 
   return (
@@ -30,6 +58,8 @@ const QuotationForm = () => {
       </div>
       <form onSubmit={handleSubmit} className="quotation-form258">
         <h2>Send Quotation</h2>
+        {successMessage && <p className="success-message258">{successMessage}</p>}
+        {errorMessage && <p className="error-message258">{errorMessage}</p>}
         <div className="form-group258">
           <label>Email</label>
           <input 
