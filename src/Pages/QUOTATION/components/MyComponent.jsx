@@ -1,119 +1,58 @@
-import * as React from "react"; 
-import { useState } from 'react';
-import axios from 'axios'; // Import Axios for making API requests
-import styles from './MyComponent.module.css';
-import Footer from './Footer';
-import './Footer.css';
-import Header1 from './Header1';
+import React, { useState } from 'react';
+import './QuotationForm.css'; // Create or update this CSS file for styling
+import logo from './pic1.png'; // Path to your logo
+import curtain from './img with blur.png'; // Path to the curtain image
 
-export default function MyComponent() {
-  const [email, setEmail] = useState("");
-  const [description, setDescription] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [errorMessage, setErrorMessage] = useState("");
+const QuotationForm = () => {
+  const [formData, setFormData] = useState({
+    email: '',
+    description: ''
+  });
 
-  const handleSubmit = async (e) => {
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setErrorMessage(""); // Clear previous error messages
-
-    // Validate email format
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email)) {
-      setErrorMessage("Please enter a valid email address.");
-      return;
-    }
-
-    // Validate description length
-    if (description.length < 10) {
-      setErrorMessage("Description must be at least 10 characters long.");
-      return;
-    }
-
-    setLoading(true);
-
-    try {
-      // Use axios to send the POST request to the backend
-      const response = await axios.post('http://localhost:5000/request-email', {
-        email,
-        description,
-      });
-
-      if (response.status === 200) {
-        alert("Quotation request sent successfully!");
-        setEmail(""); // Clear the input fields
-        setDescription("");
-      } else {
-        alert("Failed to send quotation request. Please try again.");
-      }
-    } catch (error) {
-      console.error("Error sending request:", error.response ? error.response.data : error.message);
-      setErrorMessage("There was an error submitting your request. Please try again.");
-    }
-
-    setLoading(false); // End the loading state
+    console.log('Form submitted:', formData);
   };
 
   return (
-    <>
-      <div className={styles.login}>
-        <div className={styles.div}>
-          <Header1 />
-          <div className={styles.div3}>
-            <div className={styles.div4}>
-              <div className={styles.column}>
-                <img
-                  loading="lazy"
-                  src="img with blur.png"
-                  className={styles.img}
-                  alt="Quotation image"
-                />
-              </div>
-              <div className={styles.column2}>
-                <img
-                  loading="lazy"
-                  srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/fb0f4408458057004673e69632b769a14759e57120a7e7f5f72d67e709448500"
-                  className={styles.img2}
-                  alt="Quotation image 2"
-                />
-              </div>
-              <div className={styles.column3}>
-                <div className={styles.div5}>
-                  <div className={styles.requestQuotation}>REQUEST A QUOTATION</div>
-                  {errorMessage && <div className={styles.error}>{errorMessage}</div>} {/* Display error message */}
-                  <div className={styles.inputFieldWithLabel}>
-                    <div className={styles.label}>Email</div>
-                    <input
-                      type="email"
-                      className={styles.inputField}
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      required
-                    />
-                    <div className={styles.wrapper} />
-                  </div>
-                  <div className={styles.inputFieldWithLabel2}>
-                    <div className={styles.label2}>Description</div>
-                  </div>
-                  <input
-                    type="text"
-                    className={styles.inputField2}
-                    value={description}
-                    onChange={(e) => setDescription(e.target.value)}
-                    required
-                  />
-                  <div className={styles.wrapper2} />
-                  <button type="submit" className={styles.button} onClick={handleSubmit} disabled={loading}>
-              {loading ? "Sending..." : "Request a Quotation"}
-            </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          
-        </div>
-        <Footer />
+    <div className="form-container258">
+      <div className="curtain-section258">
+        <img src={curtain} alt="Curtain" className="curtain-img258" />
+        <img src={logo} alt="Glorious Logo" className="logo258" />
       </div>
-    </>
+      <form onSubmit={handleSubmit} className="quotation-form258">
+        <h2>Send Quotation</h2>
+        <div className="form-group258">
+          <label>Email</label>
+          <input 
+            type="email" 
+            name="email" 
+            value={formData.email} 
+            onChange={handleChange} 
+            required
+          />
+        </div>
+        <div className="form-group258">
+          <label>Description</label>
+          <textarea 
+            name="description" 
+            value={formData.description} 
+            onChange={handleChange} 
+            required
+          />
+        </div>
+        <button type="submit" className="submit-btn258">send a quotation</button>
+      </form>
+    </div>
   );
-}
+};
+
+export default QuotationForm;

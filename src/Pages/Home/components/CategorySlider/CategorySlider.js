@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import './Category.css';
+import { Link } from 'react-router-dom';
 
 
 const CategorySlider = ({ categories }) => {
@@ -32,12 +33,7 @@ const CategorySlider = ({ categories }) => {
               <div key={idx} className="item-card">
                 <img src={item.image} alt={item.name} />
                 <h3>{item.name}</h3>
-                <button
-                  className="buy-now-btn"
-                  onClick={() => handleBuyNow(item.name)}
-                >
-                  Quotation
-                </button>
+                <Link to="/QUOTATION"><button className="buy-now-btn">Quotation</button></Link>
               </div>
             ))}
           </Slider>

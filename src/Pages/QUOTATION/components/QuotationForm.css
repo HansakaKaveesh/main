@@ -1,0 +1,131 @@
+.form-container258 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-image: linear-gradient(to right, #ffffff, #d8cbb3);
+  flex-direction: row; /* Default for larger screens */
+}
+
+.curtain-section258 {
+  position: relative;
+  flex: 1;
+  text-align: center;
+}
+
+.curtain-img258 {
+  max-width: 100%;
+  height: auto;
+  transform: translate(-30%, -10%);
+}
+
+.logo258 {
+  position: absolute;
+  top: 10%;
+  left: 70%;
+  transform: translateX(-20%);
+  width: 200px; /* Adjust the size as necessary */
+}
+
+.quotation-form258 {
+  flex: 1;
+  max-width: 400px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quotation-form258 h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group258 {
+  margin-bottom: 15px;
+}
+
+.form-group258 label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.form-group258 input, 
+.form-group258 textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 100px;
+}
+
+.submit-btn258 {
+  width: 100%;
+  padding: 1em;
+  background-color: #d4a142;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit-btn258:hover {
+  background-color: #b98c34;
+}
+
+/* Responsive design for tablets and mobile */
+@media only screen and (max-width: 768px) {
+  .form-container258 {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .curtain-img258 {
+    transform: translate(0, 0);
+    margin-bottom: 20px;
+  }
+
+  .quotation-form258 {
+    width: 100%;
+  }
+
+  .logo258 {
+    position: static;
+    transform: none;
+    width: 150px;
+    margin: 0 auto 20px;
+  }
+
+  .submit-btn258 {
+    font-size: 1.2rem; /* Slightly larger font for better touch interaction */
+    padding: 1.2em;
+  }
+}
+
+/* Ensure proper scaling on mobile devices */
+@media only screen and (max-width: 480px) {
+  .quotation-form258 {
+    padding: 15px;
+  }
+
+  .form-group258 input, 
+  .form-group258 textarea {
+    font-size: 0.9rem;
+  }
+
+  .quotation-form258 h2 {
+    font-size: 1.2rem;
+  }
+
+  .submit-btn258 {
+    font-size: 1rem;
+  }
+}

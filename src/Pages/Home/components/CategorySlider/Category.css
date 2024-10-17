@@ -30,18 +30,21 @@
 
 
 .buy-now-btn {
-  background-color: #c00600;
-  color: white;
+  background-color: #9e6c00;
+  border: #ffffff;
   border: none;
-  padding: 10px 115px;
+  padding: 15px 115px;
   cursor: pointer;
   font-size: 14px;
   border-radius: 5px;
   margin-top: 0px;
+  color: #ffffff;
+  
 }
 
 .buy-now-btn:hover {
-  background-color: #ff0000;
+  background-color: #311e00;
+  color: #ffd700;
 }
 .all123{
   background-color: #775621;
@@ -50,6 +53,10 @@
 @media (max-width: 768px) {
   .category-section {
     margin: 0 20px; /* Less margin on smaller screens */
+  }
+  .item-card{
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
 
   .item-card img {
