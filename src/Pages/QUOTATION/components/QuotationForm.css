@@ -14,16 +14,16 @@
 }
 
 .curtain-img258 {
-  max-width: 100%;
+  width: 72.5%;
   height: auto;
-  transform: translate(-30%, -10%);
+  transform: translate(-23%, -22%);
 }
 
 .logo258 {
   position: absolute;
   top: 10%;
   left: 70%;
-  transform: translateX(-20%);
+  transform: translateX(5%);
   width: 200px; /* Adjust the size as necessary */
 }
 

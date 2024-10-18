@@ -8,7 +8,7 @@ function Hero() {
       <div className="hero-text">
         <img src="/pic1.png" alt="Curtain" className="logo1" />
         <h1>About Us</h1>
-        <p>Our journey began in 2020 when we first stepped into the fabric industry</p>
+        <p>Few things about us</p>
         
       </div>
     </section>
