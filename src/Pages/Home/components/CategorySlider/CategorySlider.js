@@ -33,7 +33,7 @@ const CategorySlider = ({ categories }) => {
               <div key={idx} className="item-card">
                 <img src={item.image} alt={item.name} />
                 <h3>{item.name}</h3>
-                <Link to="/QUOTATION"><button className="buy-now-btn">Quotation</button></Link>
+                {/*<Link to="/QUOTATION"><button className="buy-now-btn">Quotation</button></Link>*/}
               </div>
             ))}
           </Slider>
@@ -42,5 +42,6 @@ const CategorySlider = ({ categories }) => {
     </div>
   );
 };
+
 
 export default CategorySlider;

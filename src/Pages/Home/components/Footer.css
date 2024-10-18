@@ -26,6 +26,10 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
 }
+.footer-section i {
+    margin-right: 15px;
+    color: #ffffff; /* Change the icon color */
+  }
 
 /* Individual Footer Sections */
 .footer-section {
@@ -46,6 +50,10 @@ footer {
 .footer-section p {
     font-size: 14px;
     line-height: 1.5;
+    text-align: justify;
+    padding: 5px;
+    display: flex;
+  align-items: center;
 }
 
 /* Footer Links List */
@@ -137,6 +145,7 @@ footer {
     .footer-section ul li a, 
     .footer-bottom p {
         font-size: 12px;
+
     }
 
     .social-icons img {
