@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import './Category.css';
-import { Link } from 'react-router-dom';
+{/*import { Link } from 'react-router-dom';*/}
 
 
 const CategorySlider = ({ categories }) => {
