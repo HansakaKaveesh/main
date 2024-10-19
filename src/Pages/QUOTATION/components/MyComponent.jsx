@@ -6,6 +6,7 @@ import curtain from './img with blur.png';
 
 const QuotationForm = () => {
   const [formData, setFormData] = useState({
+    name: '',      // Added name field
     email: '',
     description: ''
   });
@@ -26,6 +27,7 @@ const QuotationForm = () => {
 
     // EmailJS parameters
     const templateParams = {
+      name: formData.name,        // Include name in the template parameters
       email: formData.email,
       description: formData.description
     };
@@ -35,13 +37,13 @@ const QuotationForm = () => {
       'service_oa3pgka',  // Replace with your EmailJS Service ID
       'template_2hjolph', // Replace with your EmailJS Template ID
       templateParams,
-      'aMdXsgx7jLbgmXJeJ'      // Replace with your EmailJS User ID
+      'aMdXsgx7jLbgmXJeJ' // Replace with your EmailJS User ID
     )
     .then((response) => {
       console.log('SUCCESS!', response.status, response.text);
       setSuccessMessage('Your quotation request was sent successfully!');
       setErrorMessage('');
-      setFormData({ email: '', description: '' }); // Clear form fields after success
+      setFormData({ name: '', email: '', description: '' }); // Clear form fields after success
     })
     .catch((err) => {
       console.log('FAILED...', err);
@@ -60,6 +62,18 @@ const QuotationForm = () => {
         <h2>Send Quotation</h2>
         {successMessage && <p className="success-message258">{successMessage}</p>}
         {errorMessage && <p className="error-message258">{errorMessage}</p>}
+        
+        <div className="form-group258">
+          <label>Name</label>  {/* Added name label */}
+          <input 
+            type="text" 
+            name="name" 
+            value={formData.name} 
+            onChange={handleChange} 
+            required
+          />
+        </div>
+        
         <div className="form-group258">
           <label>Email</label>
           <input 
@@ -70,6 +84,7 @@ const QuotationForm = () => {
             required
           />
         </div>
+        
         <div className="form-group258">
           <label>Description</label>
           <textarea 
@@ -79,7 +94,8 @@ const QuotationForm = () => {
             required
           />
         </div>
-        <button type="submit" className="submit-btn258">send a quotation</button>
+        
+        <button type="submit" className="submit-btn258">Send a Quotation</button>
       </form>
     </div>
   );
