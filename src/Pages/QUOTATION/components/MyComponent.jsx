@@ -1,104 +1,135 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com'; // Import emailjs
-import './QuotationForm.css';
-import logo from './pic1.png';
-import curtain from './img with blur.png';
+import emailjs from 'emailjs-com'; // Import EmailJS
+import './QuotationForm.css'; // Assuming you will style using an external CSS file
 
-const QuotationForm = () => {
+const Quotation = () => {
   const [formData, setFormData] = useState({
-    name: '',      // Added name field
+    name: '',
     email: '',
+    address: '',
+    telNo: '',
     description: ''
   });
 
-  const [successMessage, setSuccessMessage] = useState(''); // To display success/failure message
-  const [errorMessage, setErrorMessage] = useState('');
+  const [popupVisible, setPopupVisible] = useState(false); // State for popup visibility
+  const [status, setStatus] = useState(''); // State to manage status message
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
+    setFormData((prevData) => ({
+      ...prevData,
       [name]: value
-    });
+    }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // EmailJS parameters
-    const templateParams = {
-      name: formData.name,        // Include name in the template parameters
-      email: formData.email,
-      description: formData.description
-    };
-
-    // Use EmailJS to send the email
+    // EmailJS send form
     emailjs.send(
-      'service_oa3pgka',  // Replace with your EmailJS Service ID
-      'template_2hjolph', // Replace with your EmailJS Template ID
-      templateParams,
-      'aMdXsgx7jLbgmXJeJ' // Replace with your EmailJS User ID
+      'service_oa3pgka', // replace with your service ID
+      'template_2hjolph', // replace with your template ID
+      formData,
+      'aMdXsgx7jLbgmXJeJ' // replace with your user ID
     )
-    .then((response) => {
-      console.log('SUCCESS!', response.status, response.text);
-      setSuccessMessage('Your quotation request was sent successfully!');
-      setErrorMessage('');
-      setFormData({ name: '', email: '', description: '' }); // Clear form fields after success
+    .then((result) => {
+      console.log('Email successfully sent:', result.text);
+      setStatus('Quotation sent successfully!');
+      setPopupVisible(true); // Show the popup on success
     })
-    .catch((err) => {
-      console.log('FAILED...', err);
-      setErrorMessage('Failed to send the request. Please try again.');
-      setSuccessMessage('');
+    .catch((error) => {
+      console.log('Failed to send the email:', error.text);
+      setStatus('Failed to send quotation.');
     });
   };
 
+  const closePopup = () => {
+    setPopupVisible(false);
+  };
+
   return (
-    <div className="form-container258">
-      <div className="curtain-section258">
-        <img src={curtain} alt="Curtain" className="curtain-img258" />
-        <img src={logo} alt="Glorious Logo" className="logo258" />
-      </div>
-      <form onSubmit={handleSubmit} className="quotation-form258">
+    <div className='Quotation-BK'>
+      <form className="Quotation" onSubmit={handleSubmit}>
         <h2>Send Quotation</h2>
-        {successMessage && <p className="success-message258">{successMessage}</p>}
-        {errorMessage && <p className="error-message258">{errorMessage}</p>}
         
-        <div className="form-group258">
-          <label>Name</label>  {/* Added name label */}
-          <input 
-            type="text" 
-            name="name" 
-            value={formData.name} 
-            onChange={handleChange} 
+        <div className="form-row">
+          <div className="form-group">
+            <label htmlFor="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
+        </div>
+
+        <div className="form-row">
+          <div className="form-group">
+            <label htmlFor="address">Address</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              value={formData.address}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="telNo">Tel-No</label>
+            <input
+              type="tel"
+              id="telNo"
+              name="telNo"
+              value={formData.telNo}
+              onChange={handleChange}
+              required
+            />
+          </div>
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="description">Description</label>
+          <textarea
+            id="description"
+            name="description"
+            value={formData.description}
+            onChange={handleChange}
             required
           />
         </div>
-        
-        <div className="form-group258">
-          <label>Email</label>
-          <input 
-            type="email" 
-            name="email" 
-            value={formData.email} 
-            onChange={handleChange} 
-            required
-          />
-        </div>
-        
-        <div className="form-group258">
-          <label>Description</label>
-          <textarea 
-            name="description" 
-            value={formData.description} 
-            onChange={handleChange} 
-            required
-          />
-        </div>
-        
-        <button type="submit" className="submit-btn258">Send a Quotation</button>
+
+        <button type="submit">Send a Quotation</button>
       </form>
+      
+      {status && <p>{status}</p>}
+
+      {/* Popup Modal */}
+      {popupVisible && (
+        <div className="popup-modal">
+          <div className="popup-content">
+            <h3>Success!</h3>
+            <p>Quotation sent successfully.</p>
+            <button onClick={closePopup}>Close</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
 
-export default QuotationForm;
+export default Quotation;

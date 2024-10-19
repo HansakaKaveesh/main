@@ -1,144 +1,117 @@
-.form-container258 {
+.Quotation-BK{
+  background-image: linear-gradient(to right, #ffffff, #d8cbb3);
+  padding-bottom: 60px;
+  
+}
+.Quotation {
+  width: 90%;
+  margin:  auto;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  background: #f9f9f9;
+  padding-top: 40px;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5em;
+}
+
+.form-row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 50px;
-  background-image: linear-gradient(to right, #ffffff, #d8cbb3);
-  flex-direction: row; /* Default for larger screens */
 }
 
-.curtain-section258 {
-  position: relative;
+.form-group {
   flex: 1;
-  text-align: center;
+  margin: 10px;
 }
 
-.curtain-img258 {
-  width: 72.5%;
-  height: auto;
-  transform: translate(-23%, -22%);
-}
-
-.logo258 {
-  position: absolute;
-  top: 10%;
-  left: 70%;
-  transform: translateX(5%);
-  width: 200px; /* Adjust the size as necessary */
-}
-
-.quotation-form258 {
-  flex: 1;
-  max-width: 400px;
-  background-color: rgb(255, 255, 255);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.quotation-form258 h2 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.form-group258 {
-  margin-bottom: 15px;
-}
-
-.form-group258 label {
+label {
   display: block;
   margin-bottom: 5px;
-  font-size: 1rem;
+  font-weight: bold;
 }
 
-.form-group258 input, 
-.form-group258 textarea {
+input,
+textarea {
   width: 100%;
-  padding: 15px;
+  padding: 8px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
+  border-radius: 4px;
 }
 
 textarea {
-  height: 100px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none; /* This disables the ability to resize the textarea */
+  height: 150px; /* Adjust this value to control the height */
 }
 
-.submit-btn258 {
-  width: 100%;
-  padding: 1em;
-  background-color: #d4a142;
+button {
+  display: block;
+  width: 20%; /* Adjust the width to your liking */
+  padding: 15px;
+  background-color: #593f12;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 20px auto; /* This centers the button */
+  text-align: center;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #7b5625;
+}
+
+.popup-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.popup-content h3 {
+  margin-top: 0;
+  color: #7b5625;
+}
+
+.popup-content p {
+  font-size: 16px;
+}
+
+.popup-content button {
+  margin-top: 20px;
+  padding: 10px;
+  padding-right: 50px;
+  background-color: #7b5625;
   color: white;
   border: none;
   border-radius: 5px;
-  font-size: 1rem;
   cursor: pointer;
-  margin-top: 10px;
+  text-align: center;
 }
 
-.submit-btn258:hover {
-  background-color: #b98c34;
-}
-
-.success-message258 {
-  color: green;
-  font-size: 14px;
-  margin-top: 10px;
-}
-
-.error-message258 {
-  color: red;
-  font-size: 14px;
-  margin-top: 10px;
-}
-
-
-/* Responsive design for tablets and mobile */
-@media only screen and (max-width: 768px) {
-  .form-container258 {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .curtain-img258 {
-    transform: translate(0, 0);
-    margin-bottom: 20px;
-  }
-
-  .quotation-form258 {
-    width: 100%;
-  }
-
-  .logo258 {
-    position: static;
-    transform: none;
-    width: 150px;
-    margin: 0 auto 20px;
-  }
-
-  .submit-btn258 {
-    font-size: 1.2rem; /* Slightly larger font for better touch interaction */
-    padding: 1.2em;
-  }
-}
-
-/* Ensure proper scaling on mobile devices */
-@media only screen and (max-width: 480px) {
-  .quotation-form258 {
-    padding: 15px;
-  }
-
-  .form-group258 input, 
-  .form-group258 textarea {
-    font-size: 0.9rem;
-  }
-
-  .quotation-form258 h2 {
-    font-size: 1.2rem;
-  }
-
-  .submit-btn258 {
-    font-size: 1rem;
-  }
+.popup-content button:hover {
+  background-color: #a36f2b;
 }
