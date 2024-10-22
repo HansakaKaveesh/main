@@ -8,10 +8,10 @@ const categories = [
   {
     name: "Items",
     items: [
-      { name: "Item 1", image: "/7.jpg" },
-      { name: "Item 2", image: "/Rectangle92.jpg" },
-      { name: "Item 3", image: "/7.jpg" },
-      { name: "Item 4", image: "/Rectangle93.jpg" },
+      { name: "Item 1", image: "/Home/7.jpg" },
+      { name: "Item 2", image: "/Home/Rectangle92.jpg" },
+      { name: "Item 3", image: "/Home/7.jpg" },
+      { name: "Item 4", image: "/Home/Rectangle93.jpg" },
     ],
   },
   

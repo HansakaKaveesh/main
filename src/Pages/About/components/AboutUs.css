@@ -4,34 +4,36 @@
   margin: 0;
   width: 100%;
   font-family: Arial, sans-serif;
+  background-color: #ffffff;
 }
 
-/* Main Heading */
-.about-us h2 {
-  padding: 20px;
-  font-size: 2.5rem;
-  background-color: #62420E;
-  color: #ffffff;
-  width: 100%;
-  text-transform: uppercase;
-  text-align: left;
-}
+
 
 /* Sections */
 .sectio1, .sectio2, .sectio3 {
-  margin: 40px 0;
-  padding: 1px 5%;
-  text-align: center;
   
+  padding: 10px 5%;
 }
 
 /* Section Headings */
-.sectio1 h3, .sectio2 h3, .sectio3 h3 {
+.sectio1 h3, .sectio3 h3 {
+  font-size: 1.8rem;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 60px;
+  text-align: left; /* Align left for sections 1 and 3 */
+}
+
+.sectio2 h3 {
   font-size: 1.8rem;
   color: #000;
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 30px;
+ 
+  text-align: right; /* Align right for section 2 */
 }
 
 /* Content Wrappers */
@@ -44,30 +46,49 @@
 }
 
 /* Images */
-.Who, .Our , .Us {
+.Who, .Us {
   width: 30%;
-  border-radius: 4px;
+  border-radius: 10px;
   margin: 0px 0;
 }
 
+.Our {
+  width: 30%;
+  height: 230px;
+  border-radius: 10px;
+  margin: 0px 50px;
+}
+
 /* Text Content */
-.conten1 p, .conten2 p, .conten3 p {
+.conten1 p  {
   line-height: 1.6;
-  text-align: justify;
-  margin: 0 20px;
+  text-align: left;
   font-size: 1.2rem;
+  position: relative;
+  right: 20px;
+}
+
+.conten2 p{
+  line-height: 1.6;
+  text-align:right;
+  font-size: 1.2rem;
+  
+  
+}
+
+.conten3 p{
+  line-height: 1.6;
+  text-align: left;
+  position: relative;
+  font-size: 1.2rem;
+  top: 50px;
+  position: relative;
+  right: 20px;
+
 }
 
 /* Media Queries for Responsiveness */
 @media (min-width: 768px) {
-  /* Adjust Heading Alignment */
-  .sectio1 h3 {
-    text-align: center;
-  }
-  .sectio2 h3, .sectio3 h3 {
-    text-align: center;
-  }
-
   /* Flex Direction for Larger Screens */
   .conten1, .conten2, .conten3 {
     flex-direction: row;
@@ -76,7 +97,7 @@
   }
 
   /* Adjust Image and Text Alignment on Larger Screens */
-  .Who, .Our , .Us {
+  .Who, .Our, .Us {
     max-width: 50%;
     margin-bottom: 0;
   }
@@ -86,12 +107,10 @@
     flex: 1;
     margin: 0 40px;
   }
-
-
 }
 
-@media (max-width: 480px){
-  .Who, .Our , .Us {
+@media (max-width: 480px) {
+  .Who, .Our, .Us {
     width: 100%;
     margin-bottom: 0;
   }

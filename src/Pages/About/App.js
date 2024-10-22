@@ -5,7 +5,7 @@ import Hero from './components/Hero';
 import AboutUs from './components/AboutUs';
 import CoreValues from './components/CoreValues';
 import Team from './components/Team';
-import Footer from './components/Footer';
+import Footer from '../Home/components/Footer';
 
 
 const App = () => {

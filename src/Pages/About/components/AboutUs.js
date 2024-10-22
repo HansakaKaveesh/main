@@ -5,7 +5,8 @@ const AboutUs = () => {
   return (
     <section className="about-us">
     <div className="about-us-container">
-      <h2>About Us</h2>
+    <div className="head"></div>
+      
       
       <div className="sectio1">
         <h3>Who We Are</h3>
@@ -13,16 +14,15 @@ const AboutUs = () => {
           <p>
           <span style={{ fontSize: '2rem' }}><b>W</b>e</span> are a premier fabric store dedicated to offering high-quality textiles at competitive prices. Our journey began in 2020 when we first stepped into the fabric industry. Over the years, we have steadily grown and refined our expertise, culminating in the official launch of our large-scale business on February 12, 2024.As a partnership venture, Glorious Fabric specializes in directly importing premium fabrics from around the globe. We cater to both wholesale and retail customers, ensuring that top-notch materials are accessible to everyone at affordable prices .
           </p>
-          <img src="/pic1.png" alt="Who We Are" className='Who'/>
+          <img src="/AboutUs/pic1.png" alt="Who We Are" className='Who'/>
         </div>
       </div>
       
       <div className="sectio2">
         <h3>Our Mission</h3>
         <div className="conten2">
-        <img src="/pic2.png" alt="Our Mission" className='Our' />
           <p>
-          <span style={{ fontSize: '2rem' }}>"</span>  Our mission is to deliver the most suitable and desirable fabrics at affordable prices, ensuring the highest level of quality and customer satisfaction. We are dedicated to understanding and meeting our customers' needs, striving to achieve their trust and loyalty through exceptional service and consistent value.  <span style={{ fontSize: '2rem' }}>"</span>
+              Our mission is to deliver the most suitable and desirable fabrics at affordable prices, ensuring the highest level of quality and customer satisfaction. We are dedicated to understanding and meeting our customers' needs, striving to achieve their trust and loyalty through exceptional service and consistent value.   
           </p>
           
         </div>
@@ -36,7 +36,7 @@ const AboutUs = () => {
 
             
           </p>
-          <img src="/about us 3.png" alt="Customer Care" className='Us'/>
+          <img src="/AboutUs/pic3.png" alt="Customer Care" className='Us'/>
         </div>
       </div>
       
