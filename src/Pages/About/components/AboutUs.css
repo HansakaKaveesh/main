@@ -7,11 +7,8 @@
   background-color: #ffffff;
 }
 
-
-
 /* Sections */
 .sectio1, .sectio2, .sectio3 {
-  
   padding: 10px 5%;
 }
 
@@ -23,7 +20,7 @@
   font-weight: bold;
   margin-bottom: 30px;
   margin-top: 60px;
-  text-align: left; /* Align left for sections 1 and 3 */
+  text-align: left;
 }
 
 .sectio2 h3 {
@@ -32,86 +29,110 @@
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 30px;
- 
-  text-align: right; /* Align right for section 2 */
+  text-align: right;
 }
 
 /* Content Wrappers */
 .conten1, .conten2, .conten3 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
   margin-bottom: 40px;
+  align-items: center;
 }
 
 /* Images */
-.Who, .Us {
+.Who, .Us, .Our {
   width: 30%;
   border-radius: 10px;
-  margin: 0px 0;
+  margin: 0 20px;
 }
 
 .Our {
-  width: 30%;
   height: 230px;
-  border-radius: 10px;
-  margin: 0px 50px;
 }
 
 /* Text Content */
-.conten1 p  {
+.conten1 p, .conten2 p, .conten3 p {
   line-height: 1.6;
-  text-align: left;
   font-size: 1.2rem;
-  position: relative;
+  margin: 0 40px;
+}
+
+.conten1 p {
+  text-align: left;
   right: 20px;
 }
 
-.conten2 p{
-  line-height: 1.6;
-  text-align:right;
-  font-size: 1.2rem;
-  
-  
+.conten2 p {
+  text-align: right;
 }
 
-.conten3 p{
-  line-height: 1.6;
+.conten3 p {
   text-align: left;
-  position: relative;
-  font-size: 1.2rem;
   top: 50px;
-  position: relative;
   right: 20px;
-
 }
 
-/* Media Queries for Responsiveness */
-@media (min-width: 768px) {
-  /* Flex Direction for Larger Screens */
+/* Responsive Design */
+
+/* Mobile Phones */
+@media (max-width: 600px) {
   .conten1, .conten2, .conten3 {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start; /* Align top for better alignment */
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  /* Adjust Image and Text Alignment on Larger Screens */
-  .Who, .Our, .Us {
-    max-width: 50%;
-    margin-bottom: 0;
+  .Who, .Us, .Our {
+    width: 100%;
+    margin: 0 0 20px;
   }
 
-  /* Text Alignment on Larger Screens */
+  .sectio1 h3, .sectio2 h3, .sectio3 h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
   .conten1 p, .conten2 p, .conten3 p {
-    flex: 1;
-    margin: 0 40px;
+    text-align: left;
+    font-size: 1rem;
   }
 }
 
-@media (max-width: 480px) {
-  .Who, .Our, .Us {
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .conten1, .conten2, .conten3 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Who, .Us, .Our {
     width: 100%;
-    margin-bottom: 0;
+    margin: 0 0 20px;
+  }
+
+  .sectio1 h3, .sectio2 h3, .sectio3 h3 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Laptops */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .Who, .Us, .Our {
+    width: 35%;
+  }
+
+  .sectio1 h3, .sectio2 h3, .sectio3 h3 {
+    font-size: 1.7rem;
+  }
+}
+
+/* Desktops */
+@media (min-width: 1441px) {
+  .Who, .Us, .Our {
+    width: 30%;
+  }
+
+  .sectio1 h3, .sectio2 h3, .sectio3 h3 {
+    font-size: 1.8rem;
   }
 }
