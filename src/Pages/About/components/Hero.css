@@ -1,20 +1,21 @@
 /* Hero section styling */
-.hero {
+.Sec {
     position: relative;
     text-align: right;
     color: #333;
     padding: 0px 20px;
-    background-image: linear-gradient(to right, #ffffff, #c5aa7b);
+    background-image: linear-gradient(to right, #ffffff, #d8cbb3);
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
     min-height: 100vh;
     box-sizing: border-box;
+    
 }
 
 /* Hero image styling */
-.hero-img {
+.SecImg {
     width: 50%;
     max-height: 100%;
     margin-right: 50%;
@@ -22,7 +23,7 @@
     object-fit: cover;
 }
 
-.logo1 {
+.logo12 {
     aspect-ratio: 1.42;
     object-fit: contain;
     width: 215px;
@@ -30,7 +31,7 @@
   }
 
 /* Hero text styling */
-.hero-text {
+.Sec-text {
     position: absolute;
     top: 46.5%;
     right: 10%;
@@ -38,12 +39,12 @@
     text-align: right;
 }
 
-.hero h1 {
+.Sec h1 {
     font-size: 4vw;
     margin: 0;
 }
 
-.hero p {
+.Sec p {
     font-size: 1.5vw;
     margin: 10px 0 30px;
 }
@@ -66,56 +67,61 @@
 
 /* Media query for tablet devices */
 @media (max-width: 768px) {
-    .hero {
+    .Sec {
         padding: 0 10px;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    .hero-img {
+    .SecImg {
         width: 70%;
         margin: 0 auto;
+        transform: translate(0%, -25%);
     }
 
-    .hero-text {
+    .Sec-text {
         top: 60%;
         right: 50%;
         transform: translate(50%, -50%);
     }
 
-    .hero h1 {
+    .Sec h1 {
         font-size: 6vw;
     }
 
-    .hero p {
+    .Sec p {
         font-size: 3vw;
     }
 }
 
 /* Media query for mobile devices */
 @media (max-width: 480px) {
-    .hero {
+    .Sec {
         padding: 0 5px;
         text-align: center;
     }
 
-    .hero-img {
+    .SecImg {
         width: 90%;
         margin: 0 auto;
+        transform: translate(0%, -25%);
     }
 
-    .hero-text {
+    .Sec-text {
         position: static;
         transform: none;
         margin-top: 20px;
+        text-align: center;
     }
 
-    .hero h1 {
+    .Sec h1 {
         font-size: 8vw;
+        text-align: center;
     }
 
-    .hero p {
+    .Sec p {
         font-size: 4vw;
+        text-align: center;
     }
 }
