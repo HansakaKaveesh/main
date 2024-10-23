@@ -1,138 +1,58 @@
-/* General Layout */
-.about-us-container {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
+.about-section {
+  text-align: center;
+  padding: 3rem;
+  background-color: #f9f9f9;
+  font-size: 1.5rem;
 }
 
-/* Sections */
-.sectio1, .sectio2, .sectio3 {
-  padding: 10px 5%;
+.about-section h2{
+  font-size: 2.5rem;
 }
 
-/* Section Headings */
-.sectio1 h3, .sectio3 h3 {
-  font-size: 1.8rem;
-  color: #000000;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 30px;
-  margin-top: 60px;
-  text-align: left;
-}
-
-.sectio2 h3 {
-  font-size: 1.8rem;
-  color: #000;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 30px;
-  text-align: right;
-}
-
-/* Content Wrappers */
-.conten1, .conten2, .conten3 {
+.cards-container {
   display: flex;
-  flex-direction: row;
-  margin-bottom: 40px;
-  align-items: center;
+  justify-content: space-around;
+  margin-top: 2rem;
 }
 
-/* Images */
-.Who, .Us, .Our {
-  width: 30%;
+.card {
+  background-color: #fff;
+  padding: 1.5rem;
   border-radius: 10px;
-  margin: 0 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  text-align: justify;
+  margin: 1rem; /* Added margin for spacing */
 }
 
-.Our {
-  height: 230px;
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
-/* Text Content */
-.conten1 p, .conten2 p, .conten3 p {
+.card h3 {
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+  font-size: 1.5rem; /* Responsive font size */
+}
+
+.card p {
+  color: #666;
   line-height: 1.6;
-  font-size: 1.2rem;
-  margin: 0 40px;
+  font-size: 1rem; /* Responsive font size */
 }
 
-.conten1 p {
-  text-align: left;
-  right: 20px;
-}
-
-.conten2 p {
-  text-align: right;
-}
-
-.conten3 p {
-  text-align: left;
-  top: 50px;
-  right: 20px;
-}
-
-/* Responsive Design */
-
-/* Mobile Phones */
-@media (max-width: 600px) {
-  .conten1, .conten2, .conten3 {
+@media (max-width: 768px) {
+  .cards-container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
-  .Who, .Us, .Our {
-    width: 100%;
-    margin: 0 0 20px;
-  }
-
-  .sectio1 h3, .sectio2 h3, .sectio3 h3 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  .conten1 p, .conten2 p, .conten3 p {
-    text-align: left;
-    font-size: 1rem;
-  }
-}
-
-/* Tablets */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .conten1, .conten2, .conten3 {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .Who, .Us, .Our {
-    width: 100%;
-    margin: 0 0 20px;
-  }
-
-  .sectio1 h3, .sectio2 h3, .sectio3 h3 {
-    font-size: 1.6rem;
-  }
-}
-
-/* Laptops */
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .Who, .Us, .Our {
-    width: 35%;
-  }
-
-  .sectio1 h3, .sectio2 h3, .sectio3 h3 {
-    font-size: 1.7rem;
-  }
-}
-
-/* Desktops */
-@media (min-width: 1441px) {
-  .Who, .Us, .Our {
-    width: 30%;
-  }
-
-  .sectio1 h3, .sectio2 h3, .sectio3 h3 {
-    font-size: 1.8rem;
+  .card {
+    max-width: 90%;
+    margin-bottom: 20px; /* Space between cards */
   }
 }

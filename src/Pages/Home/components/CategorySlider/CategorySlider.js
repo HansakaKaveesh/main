@@ -6,7 +6,7 @@ import './Category.css';
 
 const CategorySlider = ({ categories }) => {
     const settings = {
-        dots: true,              // Show navigation dots
+                      // Show navigation dots
         infinite: true,          // Enable infinite scrolling
         speed: 500,              // Slide transition speed (in ms)
         slidesToShow: 3,         // Number of items to show at once

@@ -1,111 +1,123 @@
-.core-values-container {
-  padding: 30px 0;
-  background-color: #eee8e3;
+/* AboutUs.css */
+
+.core-123{
+  background-color: #210055;
+ 
+}
+
+/* Container for the core values section */
+.core-values-section {
+  max-width: 100%; /* Limit the width of the slider */
+  margin: 0px 0px; /* Center the section */
+  margin-top: 0px;
+  padding:70px 60px; /* Add some padding */
+  background-color: #d8cbb3; /* Light background color */
+  border-radius: 0px; /* Rounded corners */
+  
+  text-align: center; /* Center the text */
+}
+
+/* Heading styles */
+.core-values-section h2 {
+  font-size: 2.5rem; /* Larger font size */
+  color: #333; /* Darker text color */
+  margin-top: 0px; /* Space below the heading */
+  margin-bottom: 20px;
+}
+
+/* Slide styles */
+.core-value-slide {
+  padding: 50px; /* Add padding around each slide */
+  transition: transform 0.3s ease; /* Smooth transition for hover effects */
+  margin-left: 0px;
+  
+}
+
+.core-value-slide:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+  background-color: #e2f0d700; /* Light green background on hover */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Title styles */
+.core-value-slide h3 {
+  font-size: 1.8rem; /* Font size for titles */
+  color: #644900; /* Green color for titles */
+  margin-bottom: 10px; /* Space below titles */
+  
+}
+
+/* Description styles */
+.core-value-slide p {
+  font-size: 1rem; /* Font size for descriptions */
+  color: #555; /* Grey color for descriptions */
+  line-height: 1.6; /* Improve line height for readability */
+}
+
+.slick-dots {
+  position: absolute;
+  top: 200px; /* Adjust the position of the dots */
+  display: block;
   width: 100%;
+  padding: 0;
+  margin: 0;
   text-align: center;
-  height: auto; /* Adjust to content height instead of fixed 500px */
+  list-style-type: none;
 }
 
-.core-values h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #000;
-  margin-bottom: 30px;
-}
-
-.values-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.values-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.value-card {
-  background-color: white;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.value-card:hover {
-  transform: translateY(-5px);
-}
-
-.value-icon {
-  height: 120px;
-  background-color: #785c2bfb;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 1.25rem;
-  padding: 10px;
-  font-weight: bold;
-}
-
-.value-text {
-  padding: 20px;
-  font-size: 1rem;
-  color: #555;
-}
-
-/* Responsive Design */
-
-/* Mobile Phones */
-@media (max-width: 600px) {
-  .core-values h2 {
-    font-size: 2rem;
+@media only screen and (max-width: 768px) {
+  .core-values-section {
+    padding: 50px 20px; /* Reduce padding on smaller screens */
   }
 
-  .value-icon {
-    height: 100px;
-    font-size: 1rem;
+  .core-value-slide {
+    padding: 30px; /* Reduce padding within slides on smaller screens */
   }
 
-  .value-text {
-    font-size: 0.9rem;
-    padding: 15px;
+  .core-values-section h2 {
+    font-size: 2rem; /* Reduce heading size */
+  }
+
+  .core-value-slide h3 {
+    font-size: 1.5rem; /* Adjust title size */
+  }
+
+  .core-value-slide p {
+    font-size: 0.9rem; /* Adjust description size */
+  }
+
+  .slick-dots {
+    top: 150px; /* Adjust dot position */
   }
 }
 
-/* Tablets */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .core-values h2 {
-    font-size: 2.2rem;
+@media only screen and (max-width: 480px) {
+  .core-values-section {
+    
+   
+    padding-bottom: 70px;
   }
 
-  .value-icon {
-    height: 110px;
-    font-size: 1.1rem;
+  .core-value-slide {
+    padding-bottom: 20px; /* Further reduce padding on small devices */
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  .value-text {
-    font-size: 1rem;
-    padding: 18px;
-  }
-}
-
-/* Laptops and Desktops */
-@media (min-width: 1025px) {
-  .core-values h2 {
-    font-size: 2.5rem;
+  .core-values-section h2 {
+    font-size: 1.8rem; /* Further reduce heading size */
   }
 
-  .value-icon {
-    height: 120px;
-    font-size: 1.25rem;
+  .core-value-slide h3 {
+    font-size: 1.3rem; /* Further adjust title size */
   }
 
-  .value-text {
-    font-size: 1rem;
-    padding: 20px;
+  .core-value-slide p {
+    font-size: 0.85rem; /* Further adjust description size */
+    text-align: center;
+  }
+
+  .slick-dots {
+    top: 170px; /* Further adjust dot position */
   }
 }
