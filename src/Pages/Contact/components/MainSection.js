@@ -76,7 +76,7 @@ const ContactUs = () => {
         </div>
         <div className="contact-info1">
           <p>
-            <FontAwesomeIcon icon={faMapMarkerAlt} /> GLORIOUS FABRIC PVT LTD, 182/C, KANDEWATTE ROAD MALWANA
+            <FontAwesomeIcon icon={faMapMarkerAlt} /> GLORIOUS FABRIC PVT LTD, 182/C, Kandewatte Road, Malwana
           </p>
           <p>
             <FontAwesomeIcon icon={faEnvelope} /> info@gloriousfabric.lk

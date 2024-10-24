@@ -21,9 +21,9 @@ function Header() {
         <ul className={`navi-links ${isMobileMenuOpen ? "active" : ""}`}>
           <li><Link to="/" onClick={toggleMobileMenu}>Home</Link></li>
          
-          <li><Link to="/About" onClick={toggleMobileMenu}>About Us</Link></li>
-          <li><Link to="/Contact" onClick={toggleMobileMenu}>Contact Us</Link></li>
-          <li><Link to="/QUOTATION" onClick={toggleMobileMenu}>Quotation</Link></li>
+          <li><Link to="/about-us" onClick={toggleMobileMenu}>About Us</Link></li>
+          <li><Link to="/contact-us" onClick={toggleMobileMenu}>Contact Us</Link></li>
+          <li><Link to="/quotation" onClick={toggleMobileMenu}>Quotation</Link></li>
         </ul>
       </nav>
     </header>
