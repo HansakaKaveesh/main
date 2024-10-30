@@ -104,13 +104,14 @@ button:hover {
 .popup-content button {
   margin-top: 20px;
   padding: 10px;
-  padding-right: 50px;
+  padding-right: 0px;
   background-color: #7b5625;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
+  width: 100%;
 }
 
 .popup-content button:hover {
