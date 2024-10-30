@@ -45,12 +45,18 @@
   text-align: left;
 }
 
+.about2-us-content .text h2{
+  text-align: left;
+  font-size:30px;
+}
 .mission-content .text h2 {
   text-align: right;
+  font-size:30px;
 }
 
 .customer-care-content .text h2 {
   text-align: left;
+  font-size:30px;
 }
 
 .text p {
@@ -90,10 +96,12 @@
 
   .about2-us-content .text h2{
     text-align: center;
+    
   }
 
   .mission-content .text h2 {
     text-align: center;
+    
   }
   
   .customer-care-content .text h2 {
@@ -131,13 +139,16 @@
   }
   .about2-us-content .text h2{
     text-align: center;
+    font-size:25px;
   }
 
   .mission-content .text h2 {
     text-align: center;
+    font-size:25px;
   }
   
   .customer-care-content .text h2 {
     text-align: center;
+    font-size:25px;
   }
 }

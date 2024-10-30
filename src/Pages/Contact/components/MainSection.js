@@ -24,14 +24,14 @@ const ContactUs = () => {
 
     // EmailJS integration
     emailjs.send(
-      'service_oa3pgka',  // Replace with your EmailJS service ID
-      'template_hea36es',  // Replace with your EmailJS template ID
+      'service_oa3pgka',  // EmailJS service ID
+      'template_hea36es',  // EmailJS template ID
       {
         from_name: formData.name,
         from_email: formData.email,
         message: formData.message
       },
-      'aMdXsgx7jLbgmXJeJ' // Replace with your EmailJS public key
+      'aMdXsgx7jLbgmXJeJ' // EmailJS public key
     )
     .then((result) => {
       console.log(result.text);
@@ -76,7 +76,7 @@ const ContactUs = () => {
         </div>
         <div className="contact-info1">
           <p>
-            <FontAwesomeIcon icon={faMapMarkerAlt} /> GLORIOUS FABRIC PVT LTD, 182/C, Kandewatte Road, Malwana
+            <FontAwesomeIcon icon={faMapMarkerAlt} /> Glorious Fabric (Pvt) Ltd, 182/C, Kandewatta Rd, Malwana.
           </p>
           <p>
             <FontAwesomeIcon icon={faEnvelope} /> info@gloriousfabric.lk

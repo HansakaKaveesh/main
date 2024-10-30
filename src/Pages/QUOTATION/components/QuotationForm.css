@@ -33,22 +33,20 @@ h2 {
   min-width: 200px; /* Ensures the input fields don’t get too small on small devices */
 }
 
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
 
 input, textarea {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  font-size: 16px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 textarea {
   resize: none; /* This disables the ability to resize the textarea */
   height: 150px;
+  
 }
 
 button {

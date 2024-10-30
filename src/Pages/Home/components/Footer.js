@@ -33,7 +33,7 @@ function Footer() {
           <h2>Contact Us</h2>
           <p><i className="fas fa-envelope"></i>info@gloriousfabric.lk</p>
           <p><i className="fas fa-phone-alt"></i>0776769398 / 0773315775</p>
-          <p><i className="fas fa-map-marker-alt"></i>GLORIOUS FABRIC PVT LTD, 182/C, Kandewatte Road, Malwana</p>
+          <p><i className="fas fa-map-marker-alt"></i>Glorious Fabric (Pvt) Ltd,<br/>182/C, Kandewatta Rd,<br/>Malwana.</p>
         </div>
       </div>
 

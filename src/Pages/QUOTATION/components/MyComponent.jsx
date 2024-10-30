@@ -54,22 +54,23 @@ const Quotation = () => {
         
         <div className="form-row">
           <div className="form-group">
-            <label htmlFor="name">Name</label>
             <input
               type="text"
               id="name"
               name="name"
+              placeholder="Name"
               value={formData.name}
               onChange={handleChange}
               required
             />
           </div>
           <div className="form-group">
-            <label htmlFor="email">Email</label>
+            
             <input
               type="email"
               id="email"
               name="email"
+              placeholder="Email"
               value={formData.email}
               onChange={handleChange}
               required
@@ -79,22 +80,24 @@ const Quotation = () => {
 
         <div className="form-row">
           <div className="form-group">
-            <label htmlFor="address">Address</label>
+            
             <input
               type="text"
               id="address"
               name="address"
+              placeholder="Address"
               value={formData.address}
               onChange={handleChange}
               required
             />
           </div>
           <div className="form-group">
-            <label htmlFor="telNo">Tel-No</label>
+            
             <input
               type="tel"
               id="telNo"
               name="telNo"
+              placeholder="Tel-No"
               value={formData.telNo}
               onChange={handleChange}
               required
@@ -103,10 +106,11 @@ const Quotation = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="description">Description</label>
+          
           <textarea
             id="description"
             name="description"
+            placeholder="Description"
             value={formData.description}
             onChange={handleChange}
             required
