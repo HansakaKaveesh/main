@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   background-color: #fffffffb;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .team h2 {
@@ -14,8 +14,7 @@
   font-weight: bolder;
   color: #000000;
   padding: 20px 0; 
-  
-  margin-top: 0px;
+  margin-bottom: 40px;
 }
 
 .team-section {
@@ -26,12 +25,20 @@
   top:-30px;
 }
 
-.image-container {
-  width: 200px;
+.image-container1 {
+  width: 150px;
   height: 195px;
   border-radius: 10%;
   overflow: hidden;
-  margin: 0 auto 20px auto; /* Increased margin-bottom to create more gap */
+  margin: 0 auto 30px auto; /* Increased margin-bottom to create more gap */
+}
+
+.image-container2 {
+  width: 150px;
+  height: 195px;
+  border-radius: 10%;
+  overflow: hidden;
+  margin: 0 auto 30px auto; /* Increased margin-bottom to create more gap */
 }
 
 .team-container {
@@ -42,7 +49,7 @@
 }
 
 .team-member {
-  background-color: #eee8e3;
+  background-color:  #f5ecda;
   border-radius: 10px;
   padding: 20px;
   width: 250px;
@@ -54,23 +61,31 @@
 }
 
 
-.image-container img {
+.image-container1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-container2 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 .team-member h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 10px;
   color: #000000;
+  font-weight: bold
 }
 
 .team-member p {
   font-size: 1rem;
-  color: #271b1b;
-  font-weight: bold;
+  color: #4a3e3e; /* A lighter, greyer shade */
+  
 }
+
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
@@ -88,7 +103,6 @@
 @media (min-width: 769px) and (max-width: 1024px) {
   .team-container {
     gap: 60px;
-    align-items: center;
   }
 
   .team-member {

@@ -9,19 +9,19 @@ const Team = () => {
       <div class="team-section">
         <div class="team-container">
             <div class="team-member">
-                <div class="image-container">
-                    <img src="/AboutUs/ceo.jpg" alt="Founder & CEO"/>
+                <div class="image-container1">
+                    <img src="/AboutUs/MD.jpg" alt="Managing Director"/>
                 </div>
-                <h3>Founder & CEO</h3>
-                <p>Mr.ABCD EFGH</p>
+                <h3>Mr. M Z M Kamal</h3>
+                <p>Managing Director</p>
             </div>
             
             <div class="team-member">
-                <div class="image-container">
-                    <img src="/AboutUs/ceo.jpg" alt="Social Media Manager"/>
+                <div class="image-container2">
+                    <img src="/AboutUs/D.jpg" alt="Director"/>
                 </div>
-                <h3>Social Media Manager</h3>
-                <p>Mr.ABCD EFGH</p>
+                <h3>Ms. T N Adirimanna</h3>
+                <p>Director</p>
             </div>
         </div>
     </div>

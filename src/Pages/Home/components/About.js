@@ -3,8 +3,8 @@ import './About.css';
 
 function About() {
   return (
-    <section className="about">
-      <div className="about-text">
+    <section className="aboutUS">
+      <div className="aboutUS-text">
         <h2>About Us</h2>
         <p>
         Welcome to Glorious Fabric Pvt Ltd ! Located in the heart of Malwana , we are a premier fabric store dedicated to
