@@ -15,9 +15,9 @@ function Footer() {
           <h2>Quick Links</h2>
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/About">About Us</Link></li>
-            <li><Link to="/Contact">Contact Us</Link></li>
-            <li><Link to="/Quotation">Quotation</Link></li>
+            <li><Link to="/about-us">About Us</Link></li>
+            <li><Link to="/contact-us">Contact Us</Link></li>
+            <li><Link to="/quotation">Quotation</Link></li>
           </ul>
         </div>
 
