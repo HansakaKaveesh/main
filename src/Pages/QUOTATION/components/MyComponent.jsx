@@ -34,7 +34,7 @@ const Quotation = () => {
     )
     .then((result) => {
       console.log('Email successfully sent:', result.text);
-      setStatus('Quotation sent successfully!');
+      setStatus('');
       setPopupVisible(true); // Show the popup on success
     })
     .catch((error) => {

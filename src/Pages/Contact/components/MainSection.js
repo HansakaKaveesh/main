@@ -10,6 +10,7 @@ const ContactUs = () => {
     email: '',
     message: ''
   });
+  const [showPopup, setShowPopup] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -35,11 +36,15 @@ const ContactUs = () => {
     )
     .then((result) => {
       console.log(result.text);
-      alert("Message sent successfully!");
+      setShowPopup(true); // Show popup on success
     }, (error) => {
       console.log(error.text);
       alert("Failed to send message, please try again later.");
     });
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
   };
 
   return (
@@ -86,6 +91,17 @@ const ContactUs = () => {
           </p>
         </div>
       </div>
+      
+      {/* Popup Message */}
+      {showPopup && (
+        <div className="popup">
+          <div className="popup-content">
+          <h3>Success!</h3>
+            <p>Message sent successfully!</p>
+            <button onClick={closePopup}>Close</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
