@@ -145,6 +145,8 @@ footer {
     .footer-section ul li a, 
     .footer-bottom p {
         font-size: 12px;
+        justify-content: center;
+        text-align: center;
 
     }
 
