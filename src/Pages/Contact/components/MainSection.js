@@ -22,17 +22,17 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // EmailJS integration
+  
+    // EmailJS integration using simplified environment variables
     emailjs.send(
-      'service_oa3pgka',  // EmailJS service ID
-      'template_hea36es',  // EmailJS template ID
+      process.env.REACT_APP_SERVICE_ID,   // EmailJS service ID from .env
+      'template_hea36es',                 // Hardcoded template ID
       {
         from_name: formData.name,
         from_email: formData.email,
         message: formData.message
       },
-      'aMdXsgx7jLbgmXJeJ' // EmailJS public key
+      process.env.REACT_APP_USER_ID       // EmailJS public key from .env
     )
     .then((result) => {
       console.log(result.text);
@@ -41,7 +41,9 @@ const ContactUs = () => {
       console.log(error.text);
       alert("Failed to send message, please try again later.");
     });
-  };
+  };    
+  
+  
 
   const closePopup = () => {
     setShowPopup(false);

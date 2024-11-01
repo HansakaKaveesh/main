@@ -24,13 +24,13 @@ const Quotation = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // EmailJS send form
+  
+    // EmailJS send form using environment variables
     emailjs.send(
-      'service_oa3pgka', // replace with your service ID
-      'template_2hjolph', // replace with your template ID
+      process.env.REACT_APP_SERVICE_ID,  // Service ID from .env
+      'template_2hjolph',                // Template ID
       formData,
-      'aMdXsgx7jLbgmXJeJ' // replace with your user ID
+      process.env.REACT_APP_USER_ID      // User ID from .env
     )
     .then((result) => {
       console.log('Email successfully sent:', result.text);
@@ -42,6 +42,7 @@ const Quotation = () => {
       setStatus('Failed to send quotation.');
     });
   };
+  
 
   const closePopup = () => {
     setPopupVisible(false);
