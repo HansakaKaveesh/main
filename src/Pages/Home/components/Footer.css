@@ -125,6 +125,14 @@ footer {
     .footer-bottom {
         font-size: 13px;
     }
+    .footer-section p, 
+    .footer-section ul li a, 
+    .footer-bottom p {
+        font-size: 12px;
+        justify-content: center;
+        text-align: center;
+
+    }
 }
 
 @media (max-width: 480px) {
