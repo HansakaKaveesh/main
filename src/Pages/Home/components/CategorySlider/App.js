@@ -1,28 +1,13 @@
-import React from "react";
-import CategorySlider from "./CategorySlider";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// App.js
+import React from 'react';
+import ProductList from './ProductList';
 
-
-const categories = [
-  {
-    name: "Items",
-    items: [
-      { name: "Item 1", image: "/Home/7.jpg" },
-      { name: "Item 2", image: "/Home/Rectangle92.jpg" },
-      { name: "Item 3", image: "/Home/7.jpg" },
-      { name: "Item 4", image: "/Home/Rectangle93.jpg" },
-    ],
-  },
-  
-];
-
-function App() {
+const App = () => {
   return (
     <div>
-      <CategorySlider categories={categories} />
+      <ProductList />
     </div>
   );
-}
+};
 
 export default App;
