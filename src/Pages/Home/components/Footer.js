@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css'; 
 import { Link } from 'react-router-dom';
+import ScrollToTop from './ScrollToTop';
 
 function Footer() {
   return (
@@ -39,7 +40,8 @@ function Footer() {
 
       <div className="footer-bottom">
         <p>&copy; 2024 Glorious Fabric Pvt Ltd. All Rights Reserved.</p>
-      </div> 
+      </div>
+      <ScrollToTop />
     </footer>
   );
 }

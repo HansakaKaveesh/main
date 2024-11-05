@@ -6,6 +6,7 @@ import FlashSale from './components/FlashSale';
 import About from './components/About';
 import Footer from './components/Footer';
 
+
 function Home() {
   return (
     <div>
@@ -15,6 +16,7 @@ function Home() {
       <FlashSale />
       <About />
       <Footer />
+      
     </div>
   );
 }

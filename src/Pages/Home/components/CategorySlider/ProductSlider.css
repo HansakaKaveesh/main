@@ -90,8 +90,6 @@
   position: relative; /* Required for arrow positioning */
 }
 
-
-
 @media (max-width: 768px) {
   .product-content {
     flex-direction: column;
