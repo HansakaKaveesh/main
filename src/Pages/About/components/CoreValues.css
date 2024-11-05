@@ -65,6 +65,13 @@
   list-style-type: none;
 }
 
+.core-values-section .slick-prev,
+.core-values-section .slick-next {
+  display: none !important;
+}
+
+
+
 
 
 @media only screen and (max-width: 768px) {
@@ -120,6 +127,6 @@
   }
 
   .slick-dots {
-    top: 170px; /* Further adjust dot position */
+    top: 200px; /* Further adjust dot position */
   }
 }

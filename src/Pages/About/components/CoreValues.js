@@ -15,6 +15,8 @@ const CoreValues = () => {
     autoplaySpeed: 5000,
   };
 
+  
+
   const coreValues = [
     {
       title: 'Sustainability',
