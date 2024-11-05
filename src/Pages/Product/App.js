@@ -5,7 +5,7 @@ import Section from './components/Section';
 import ProductList from './components/ProductList';
 import Header from './components/Header'
 import './App.css';
-import Footer from './components/Footer';
+import Footer from '../Home/components/Footer';
 
 
 function App() {
