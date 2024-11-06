@@ -11,7 +11,7 @@ const ProductCard = ({ product }) => {
     <div className={`products-card ${alignmentClass}`}>
       <div className="images-section">
         <img src={product.imageUrl} alt={`Item ${product.id}`} />
-        <div className={`items-label ${alignmentClass}`}>Item {product.id}</div>
+        <div className={`items-label ${alignmentClass}`}> {product.id}</div>
       </div>
       <div className="details-section">
         <h3>Features</h3>
@@ -21,9 +21,9 @@ const ProductCard = ({ product }) => {
           ))}
         </ul>
         <h3>Specifications</h3>
-        <p>Width: {product.specifications.width}</p>
-        <p>Weight: {product.specifications.weight}</p>
-        <p>Composition: {product.specifications.composition}</p>
+        <p> {product.specifications.width}</p>
+        <p>{product.specifications.weight}</p>
+        <p>{product.specifications.composition}</p>
         <p>{product.specifications.use}</p>
       </div>
     </div>

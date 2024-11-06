@@ -47,9 +47,9 @@
   left: 20px;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-  padding: 10px 50px;
+  padding: 10px 30px;
   border-radius: 15px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -57,7 +57,7 @@
 
 .products-card:hover .items-label {
   background-color: #f3e2c6;
-  transform: scale(1.1);
+  transform: scale(1.0);
 }
 
 /* Details section */
@@ -90,7 +90,7 @@
 
 .details-section p, .details-section ul li {
   font-size: 16px;
-  margin: 5px 0;
+  margin: 0px 0;
   color: #555;
   transition: color 0.3s ease;
 }
