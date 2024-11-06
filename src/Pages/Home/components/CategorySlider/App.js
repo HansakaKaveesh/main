@@ -1,30 +1,33 @@
 // App.js
-import React from 'react';
-import './App.css'; // Styling for the main app
-import ProductCard from './ProductList';
+import React, { useState } from "react";
+import { Scrollama, Step } from "react-scrollama";
+import "./App.css"; // Styling for the main app
+import ProductCard from "./ProductList";
 
 const products = [
   {
-    id: 'Rayon Fabric',
-    imageUrl: 'Home/pic1.png', // Replace with actual image paths
-    features: [
-      "Digital Print Fabric",
+    title: "Rayon Fabric",
+    description: {
+      features: [
+        "Digital Print Fabric",
         "Rayon Twill Fabric",
         "Rayon Spandex Fabric",
         "Rayon Challis Fabric",
-        "Rayon Slub Fabric"
-    ],
-    specifications: {
-      width: "Width: 145-150cm",
-      weight: "Weight: 70-180gsm",
-      composition: "Composition: 100%R",
-      use: "Use for dress, shirts, pants, pajamas"
-    }
+        "Rayon Slub Fabric",
+      ],
+      specifications: [
+        "Width: 145-150cm",
+        "Weight: 70-180gsm",
+        "Composition: 100%R",
+        "Use for dress, shirts, pants, pajamas",
+      ],
+    },
+    imageSrc: "Home/rayon.jpg",
   },
   {
-    id: 'Polyester Stretch Fabric',
-    imageUrl: 'Home/pic3.png',
-    features: [
+    title: "Polyester Stretch Fabric",
+    description: {
+      features: [
         "CEY Fabric",
         "SPH Fabric",
         "Como Crepe Fabric",
@@ -32,103 +35,95 @@ const products = [
         "Armani Silk Fabric",
         "Satin Fabric",
         "Chiffon Fabric",
-        "Polyester Crepe Fabric"
-    ],
-    specifications: {
-      width: "Weight: 80-200gsm",
-      weight: "",
-      composition: "Composition: 100%T",
-      use: "Use for dress, skirt, blouse"
-    }
+        "Polyester Crepe Fabric",
+      ],
+      specifications: [
+        "Weight: 80-200gsm",
+        "Composition: 100%T",
+        "Use for dress, skirt, blouse",
+      ],
+    },
+    imageSrc: "Home/pic1.png",
   },
   {
-    id: 'Polyester Fabric',
-    imageUrl: 'Home/pic2.png',
-    features: [
-      "Morgan Fabric",
+    title: "Polyester Fabric",
+    description: {
+      features: [
+        "Morgan Fabric",
         "Prada Fabric",
         "British Twill Fabric",
         "Barbie Fabric",
         "Maserati Fabric",
-        "Poka Twill Fabric"
-    ],
-    specifications: {
-      width: "Weight: 180-300gsm",
-      weight: "",
-      composition: "Composition: 100%T",
-      use: "Use for lady's suit, blouse, pant"
-    }
+        "Poka Twill Fabric",
+      ],
+      specifications: [
+        "Weight: 180-300gsm",
+        "Composition: 100%T",
+        "Use for lady's suit, blouse, pant",
+      ],
+    },
+    imageSrc: "Home/pic1.png",
   },
   {
-    id: 'Satin Fabric',
-    imageUrl: 'Home/pic1.png',
-    features: [
-      "American Satin Fabric",
+    title: "Satin Fabric",
+    description: {
+      features: [
+        "American Satin Fabric",
         "Russian Satin Fabric",
         "Spandex Satin Fabric",
         "Crinkle Satin Fabric",
         "Armani Silk Fabric",
-        "Matte Satin Fabric"
-    ],
-    specifications: {
-      width: "Width: 150cm",
-      weight: "Weight: 80-170gsm",
-      composition: "",
-      use: "Use for dress, skirt, blouse, shirt, pajama"
-    }
+        "Matte Satin Fabric",
+      ],
+      specifications: [
+        "Width: 150cm",
+        "Weight: 80-170gsm",
+        "Use for dress, skirt, blouse, shirt, pajama",
+      ],
+    },
+    imageSrc: "Home/pic1.png",
   },
-
   {
-    id: 'Cotton Spandex Fabric',
-    imageUrl: 'Home/pic2.png',
-    features: [
-      "100% Cotton Fabric",
+    title: "Cotton Spandex Fabric",
+    description: {
+      features: [
+        "100% Cotton Fabric",
         "Cotton Spandex Fabric",
-        "Cotton Flannel Fabric"
-    ],
-    specifications: {
-      width: "Shirt Weight: 80-140gsm",
-      weight: "Pant Weight: 180-300gsm",
-      composition: "",
-      use: ""
-    }
+        "Cotton Flannel Fabric",
+      ],
+      specifications: ["Shirt Weight: 80-140gsm", "Pant Weight: 180-300gsm"],
+    },
+    imageSrc: "Home/pic1.png",
   },
-
   {
-    id: 'Bengaline Fabric',
-    imageUrl: 'Home/pic3.png',
-    features: [
-      "-",
-        
-    ],
-    specifications: {
-      width: "Shirt Weight: 120-180gsm",
-      weight: "Pant Weight: 230-260gsm",
-      composition: "",
-      use: "Use for skirt, shirt, blouse, pants, leggings"
-    }
+    title: "Bengaline Fabric",
+    description: {
+      features: [],
+      specifications: [
+        "Shirt Weight: 120-180gsm",
+        "Pant Weight: 230-260gsm",
+        "Use for skirt, shirt, blouse, pants, leggings",
+      ],
+    },
+    imageSrc: "Home/pic1.png",
   },
-
   {
-    id: 'Check Flannel Fabric',
-    imageUrl: 'Home/pic1.png',
-    features: [
-      "-",
-        
-    ],
-    specifications: {
-      width: "Width: 150cm",
-      weight: "Weight: 260-270gsm, 300-330gsm, 380-400gsm",
-      composition: "",
-      use: "Use for coat, dress, pants, shirt"
-    }
+    title: "Check Flannel Fabric",
+    description: {
+      features: [],
+      specifications: [
+        "Width: 150cm",
+        "Weight: 260-270gsm, 300-330gsm, 380-400gsm",
+        "Use for coat, dress, pants, shirt",
+      ],
+    },
+    imageSrc: "Home/pic1.png",
   },
-
   {
-    id: 'Knit Fabric',
-    imageUrl: 'Home/pic2.png',
-    features: [
-      "Rib Fabric",
+    title: "Knit Fabric",
+    description: {
+      features: [
+        "Rib Fabric",
         "Suede Fabric",
         "Scuba Fabric",
         "Roma Fabric",
@@ -136,26 +131,39 @@ const products = [
         "DTY Brush Fabric",
         "Single Jersey Fabric",
         "Bonded Fabric",
-        
-    ],
-    specifications: {
-      width: "-",
-      weight: "",
-      composition: "",
-      use: ""
-    }
+      ],
+      specifications: [],
+    },
+    imageSrc: "Home/pic1.png",
   },
-
-
-
 ];
 
 const App = () => {
+  const [currentStepIndex, setCurrentStepIndex] = useState(null);
+
+  const onStepEnter = ({ data }) => {
+    setCurrentStepIndex(data);
+  };
+
   return (
     <div className="app123">
-      {products.map((product) => (
-        <ProductCard key={product.id} product={product} />
-      ))}
+      <Scrollama onStepEnter={onStepEnter}>
+        {products.map((product, index) => (
+          <Step data={index} key={index}>
+            <div
+              style={{
+                margin: "1vh 0",
+                opacity: currentStepIndex === index ? 1 : 0.7,
+              }}
+            >
+              <ProductCard
+                product={product}
+                isActive={currentStepIndex === index}
+              />
+            </div>
+          </Step>
+        ))}
+      </Scrollama>
     </div>
   );
 };
