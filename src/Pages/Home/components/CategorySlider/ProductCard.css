@@ -1,0 +1,148 @@
+.products-card {
+  display: flex;
+  margin: 20px auto;
+  background-color: #f3e2c6;
+  padding: 15px;
+  width: 95%;
+  border-radius: 15px;
+  box-shadow: 8px 6px 8px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Hover effect */
+.products-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Layout for image and details sections */
+.images-section {
+  position: relative;
+  width: 90%;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.images-section img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.products-card:hover .images-section img {
+  transform: scale(1.5);
+}
+
+/* Items label styling */
+.items-label {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 10px 50px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.products-card:hover .items-label {
+  background-color: #f3e2c6;
+  transform: scale(1.1);
+}
+
+/* Details section */
+.details-section {
+  padding: 0 70px;
+  width: 50%;
+  transition: padding 0.3s ease;
+}
+
+.products-card:hover .details-section {
+  padding: 50px;
+}
+
+.details-section h2, .details-section h3 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.products-card:hover .details-section h2, .products-card:hover .details-section h3 {
+  color: #704E22;
+}
+
+.details-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.details-section p, .details-section ul li {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.products-card:hover .details-section ul li {
+  color: #333;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .products-card {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .images-section {
+    width: 100%;
+  }
+
+  .details-section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .details-section h2, .details-section h3 {
+    font-size: 20px;
+  }
+
+  .items-label {
+    padding: 8px 30px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .details-section h2, .details-section h3 {
+    font-size: 18px;
+  }
+
+  .details-section p, .details-section ul li {
+    font-size: 14px;
+  }
+
+  .items-label {
+    padding: 5px 20px;
+  }
+}

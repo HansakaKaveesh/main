@@ -1,5 +1,6 @@
 /* AboutUs.css */
-
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 .core-123{
   background-color: #210055;
  
