@@ -42,7 +42,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 50px;
-    transform: translate(-10%, 0%);
+    transform: translate(-5%, 0%);
+    object-fit: cover;
     
 }
 
