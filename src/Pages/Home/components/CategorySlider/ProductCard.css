@@ -1,11 +1,15 @@
+.products-card-container {
+  height: 90vh;
+}
+
 .products-card {
   display: flex;
   margin: 20px auto;
   background-color: #f3e2c6;
   padding: 15px;
-  width: 95%;
+  width: 90vw;
+  height: 75vh;
   border-radius: 15px;
-  box-shadow: 8px 6px 8px rgba(0, 0, 0, 0.7);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   align-items: center;
   animation: fadeIn 1s ease-in-out;
@@ -20,43 +24,42 @@
 /* Layout for image and details sections */
 .images-section {
   position: relative;
-  width: 90%;
+  width: 50%;
+  height: 100%;
   overflow: hidden;
   border-radius: 10px;
   transition: transform 0.3s ease;
-  
 }
 
 .images-section img {
   width: 100%;
-  height: auto;
-  max-height: 500px;
+  height: 100%;
   border-radius: 10px;
   transition: transform 0.3s ease;
   object-fit: cover;
+  object-position: top;
 }
 
 .products-card:hover .images-section img {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 
 /* Items label styling */
 .items-label {
   position: absolute;
   top: 20px;
-  left: 20px;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
+  left: 25px;
+  background-color: #f3e2c6;
+  color: #704e22;
   padding: 10px 50px;
   border-radius: 15px;
-  font-size: 14px;
+  font-size: 1.2em;
   font-weight: bold;
   text-transform: uppercase;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .products-card:hover .items-label {
-  background-color: #f3e2c6;
   transform: scale(1.1);
 }
 
@@ -67,20 +70,13 @@
   transition: padding 0.3s ease;
 }
 
-.products-card:hover .details-section {
-  padding: 50px;
-}
-
-.details-section h2, .details-section h3 {
-  color: #333;
+.details-section h2,
+.details-section h3 {
+  color: #704e22;
   margin-bottom: 10px;
   font-size: 26px;
   font-weight: bold;
   transition: color 0.3s ease;
-}
-
-.products-card:hover .details-section h2, .products-card:hover .details-section h3 {
-  color: #704E22;
 }
 
 .details-section ul {
@@ -88,15 +84,12 @@
   padding: 0;
 }
 
-.details-section p, .details-section ul li {
+.details-section p,
+.details-section ul li {
   font-size: 16px;
   margin: 5px 0;
   color: #555;
   transition: color 0.3s ease;
-}
-
-.products-card:hover .details-section ul li {
-  color: #333;
 }
 
 /* Fade-in animation */
@@ -123,12 +116,12 @@
   .details-section {
     width: 100%;
     padding: 20px;
-    
   }
 
-  .details-section h2, .details-section h3 {
+  .details-section h2,
+  .details-section h3 {
     font-size: 20px;
-    color:#704E22 ;
+    color: #704e22;
   }
 
   .items-label {
@@ -138,11 +131,13 @@
 }
 
 @media (max-width: 480px) {
-  .details-section h2, .details-section h3 {
+  .details-section h2,
+  .details-section h3 {
     font-size: 18px;
   }
 
-  .details-section p, .details-section ul li {
+  .details-section p,
+  .details-section ul li {
     font-size: 14px;
   }
 
