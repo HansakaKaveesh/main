@@ -24,14 +24,16 @@
   overflow: hidden;
   border-radius: 10px;
   transition: transform 0.3s ease;
+  
 }
 
 .images-section img {
   width: 100%;
   height: auto;
   max-height: 500px;
-  object-fit: cover;
+  border-radius: 10px;
   transition: transform 0.3s ease;
+  object-fit: cover;
 }
 
 .products-card:hover .images-section img {
@@ -121,10 +123,12 @@
   .details-section {
     width: 100%;
     padding: 20px;
+    
   }
 
   .details-section h2, .details-section h3 {
     font-size: 20px;
+    color:#704E22 ;
   }
 
   .items-label {
