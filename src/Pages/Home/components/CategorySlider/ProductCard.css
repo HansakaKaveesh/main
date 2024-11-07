@@ -22,7 +22,7 @@
   position: relative;
   width: 90%;
   overflow: hidden;
-  border-radius: 15px;
+  border-radius: 10px;
   transition: transform 0.3s ease;
   
 }
@@ -31,7 +31,7 @@
   width: 100%;
   height: auto;
   max-height: 500px;
-  border-radius: 15px;
+  border-radius: 10px;
   transition: transform 0.3s ease;
   object-fit: cover;
 }
@@ -47,9 +47,9 @@
   left: 20px;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-  padding: 10px 30px;
-  border-radius: 25px;
-  font-size: 16px;
+  padding: 10px 50px;
+  border-radius: 15px;
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -57,29 +57,26 @@
 
 .products-card:hover .items-label {
   background-color: #f3e2c6;
-  transform: scale(1.0);
+  transform: scale(1.1);
 }
 
 /* Details section */
 .details-section {
-  padding: 0 80px;
+  padding: 0 70px;
   width: 50%;
   transition: padding 0.3s ease;
-  margin-top: -30px;
 }
 
 .products-card:hover .details-section {
-  padding: 60px;
+  padding: 50px;
 }
 
 .details-section h2, .details-section h3 {
   color: #333;
-  margin-bottom: 5px;
-  margin-top: 20px;
+  margin-bottom: 10px;
   font-size: 26px;
   font-weight: bold;
   transition: color 0.3s ease;
-  
 }
 
 .products-card:hover .details-section h2, .products-card:hover .details-section h3 {
@@ -93,7 +90,7 @@
 
 .details-section p, .details-section ul li {
   font-size: 16px;
-  margin: 0px 0;
+  margin: 5px 0;
   color: #555;
   transition: color 0.3s ease;
 }
@@ -125,12 +122,8 @@
 
   .details-section {
     width: 100%;
-    padding: 30px;
+    padding: 20px;
     
-  }
-
-  .products-card:hover .details-section {
-    padding: 30px;
   }
 
   .details-section h2, .details-section h3 {
@@ -149,10 +142,6 @@
     font-size: 18px;
   }
 
-  .products-card:hover .details-section {
-    padding: 30px;
-  }
-
   .details-section p, .details-section ul li {
     font-size: 14px;
   }
@@ -161,6 +150,3 @@
     padding: 5px 20px;
   }
 }
-
-
-

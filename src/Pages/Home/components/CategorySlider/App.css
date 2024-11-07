@@ -1,7 +1,6 @@
 .app123 {
-    display: flex;
-    flex-direction: column;
-    background-color: #704E22; /* Background color for the section */
-    padding: 20px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  background-color: #704e22; /* Background color for the section */
+  padding: 20px;
+  }  
