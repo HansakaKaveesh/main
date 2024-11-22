@@ -8,8 +8,7 @@ const products = [
   { title: "Rayon Fabric",
     description: {
       features: [
-    
-      "Digital Print Fabric",
+    "Digital Print Fabric",
         "Rayon Twill Fabric",
         "Rayon Spandex Fabric",
         "Rayon Challis Fabric",
@@ -47,7 +46,6 @@ const products = [
   },
   imageSrc: "Home/pic1.png",
   },
-  
   {
     title: "Polyester Fabric",
     description: {
@@ -67,12 +65,11 @@ const products = [
   },
   imageSrc: "Home/pic1.png",
   },
- 
   {
     title: "Satin Fabric",
     description: {
       features: [
-      "American Satin Fabric",
+        "American Satin Fabric",
         "Russian Satin Fabric",
         "Spandex Satin Fabric",
         "Crinkle Satin Fabric",
@@ -95,8 +92,8 @@ const products = [
       "100% Cotton Fabric",
         "Cotton Spandex Fabric",
         "Cotton Flannel Fabric"
-    ],
-    specifications: ["Shirt Weight: 80-140gsm", "Pant Weight: 180-300gsm"],
+      ],
+      specifications: ["Shirt Weight: 80-140gsm", "Pant Weight: 180-300gsm"],
     },
     imageSrc: "Home/pic1.png",
     
