@@ -22,7 +22,7 @@ const products = [
         "Use for dress, shirts, pants, pajamas",
       ],
     },
-    imageSrc: "Home/rayon.jpg",
+    imageSrc: "Home/rayon_backup.jpg",
   },  
   {
     title: "Polyester Stretch Fabric",
