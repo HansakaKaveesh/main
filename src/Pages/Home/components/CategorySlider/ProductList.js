@@ -35,7 +35,7 @@ const ProductCard = ({ product, isActive }) => {
             </div>
           )}
         </div>
-      </div>
+    </div>
     </div>
   );
 };

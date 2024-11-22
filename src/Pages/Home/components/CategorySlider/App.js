@@ -23,7 +23,7 @@ const products = [
       ],
     },
     imageSrc: "Home/rayon.jpg",
-  },
+  },  
   {
     title: "Polyester Stretch Fabric",
     description: {
@@ -35,16 +35,16 @@ const products = [
         "Armani Silk Fabric",
         "Satin Fabric",
         "Chiffon Fabric",
-        "Polyester Crepe Fabric",
-      ],
-      specifications: [
-        "Weight: 80-200gsm",
-        "Composition: 100%T",
-        "Use for dress, skirt, blouse",
-      ],
-    },
-    imageSrc: "Home/pic1.png",
+        "Polyester Crepe Fabric"
+    ],
+    specifications: [
+      "Weight: 80-200gsm",
+      "Composition: 100%T",
+      "Use for dress, skirt, blouse",
+    ],
   },
+  imageSrc: "Home/pic1.png",
+  },  
   {
     title: "Polyester Fabric",
     description: {
@@ -54,16 +54,16 @@ const products = [
         "British Twill Fabric",
         "Barbie Fabric",
         "Maserati Fabric",
-        "Poka Twill Fabric",
-      ],
-      specifications: [
-        "Weight: 180-300gsm",
-        "Composition: 100%T",
-        "Use for lady's suit, blouse, pant",
-      ],
-    },
-    imageSrc: "Home/pic1.png",
+        "Poka Twill Fabric"
+    ],
+    specifications: [
+      "Weight: 180-300gsm",
+      "Composition: 100%T",
+      "Use for lady's suit, blouse, pant",
+    ],
   },
+  imageSrc: "Home/pic1.png",
+  }, 
   {
     title: "Satin Fabric",
     description: {
@@ -73,25 +73,25 @@ const products = [
         "Spandex Satin Fabric",
         "Crinkle Satin Fabric",
         "Armani Silk Fabric",
-        "Matte Satin Fabric",
-      ],
-      specifications: [
-        "Width: 150cm",
-        "Weight: 80-170gsm",
-        "Use for dress, skirt, blouse, shirt, pajama",
-      ],
-    },
-    imageSrc: "Home/pic1.png",
+        "Matte Satin Fabric"
+    ],
+    specifications: [
+      "Width: 150cm",
+      "Weight: 80-170gsm",
+      "Use for dress, skirt, blouse, shirt, pajama",
+    ],
+  },
+  imageSrc: "Home/pic1.png",
   },
   {
     title: "Cotton Spandex Fabric",
     description: {
       features: [
-        "100% Cotton Fabric",
+      "100% Cotton Fabric",
         "Cotton Spandex Fabric",
-        "Cotton Flannel Fabric",
-      ],
-      specifications: ["Shirt Weight: 80-140gsm", "Pant Weight: 180-300gsm"],
+        "Cotton Flannel Fabric"
+    ],
+    specifications: ["Shirt Weight: 80-140gsm", "Pant Weight: 180-300gsm"],
     },
     imageSrc: "Home/pic1.png",
   },

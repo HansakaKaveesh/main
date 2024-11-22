@@ -66,6 +66,9 @@
 /* Details section */
 .details-section {
   padding: 0 70px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;
   width: 50%;
   transition: padding 0.3s ease;
 }
@@ -87,7 +90,7 @@
 .details-section p,
 .details-section ul li {
   font-size: 16px;
-  margin: 0px 0;
+  margin: 2px 0;
   color: #555;
   transition: color 0.3s ease;
 }
