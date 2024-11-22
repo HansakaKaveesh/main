@@ -5,31 +5,29 @@ import "./App.css"; // Styling for the main app
 import ProductCard from "./ProductList";
 
 const products = [
-  { title: "Rayon Fabric",
+  {
+    title: "Rayon Fabric",
     description: {
       features: [
-    
-      "Digital Print Fabric",
+        "Digital Print Fabric",
         "Rayon Twill Fabric",
         "Rayon Spandex Fabric",
         "Rayon Challis Fabric",
-        "Rayon Slub Fabric"
-    ],
-    specifications: [
-      "Width: 145-150cm",
-      "Weight: 70-180gsm",
-      "Composition: 100%R",
-      "Use for dress, shirts, pants, pajamas",
-    ],
-  },
-  imageSrc: "Home/rayon.jpg",
+        "Rayon Slub Fabric",
+      ],
+      specifications: [
+        "Width: 145-150cm",
+        "Weight: 70-180gsm",
+        "Composition: 100%R",
+        "Use for dress, shirts, pants, pajamas",
+      ],
     },
-  
+    imageSrc: "Home/rayon.jpg",
+  },  
   {
     title: "Polyester Stretch Fabric",
     description: {
       features: [
-   
         "CEY Fabric",
         "SPH Fabric",
         "Como Crepe Fabric",
@@ -46,13 +44,12 @@ const products = [
     ],
   },
   imageSrc: "Home/pic1.png",
-  },
-  
+  },  
   {
     title: "Polyester Fabric",
     description: {
       features: [
-      "Morgan Fabric",
+        "Morgan Fabric",
         "Prada Fabric",
         "British Twill Fabric",
         "Barbie Fabric",
@@ -66,13 +63,12 @@ const products = [
     ],
   },
   imageSrc: "Home/pic1.png",
-  },
- 
+  }, 
   {
     title: "Satin Fabric",
     description: {
       features: [
-      "American Satin Fabric",
+        "American Satin Fabric",
         "Russian Satin Fabric",
         "Spandex Satin Fabric",
         "Crinkle Satin Fabric",
@@ -87,7 +83,6 @@ const products = [
   },
   imageSrc: "Home/pic1.png",
   },
-
   {
     title: "Cotton Spandex Fabric",
     description: {
@@ -99,9 +94,7 @@ const products = [
     specifications: ["Shirt Weight: 80-140gsm", "Pant Weight: 180-300gsm"],
     },
     imageSrc: "Home/pic1.png",
-    
   },
-
   {
     title: "Bengaline Fabric",
     description: {
@@ -114,7 +107,6 @@ const products = [
     },
     imageSrc: "Home/pic1.png",
   },
-
   {
     title: "Check Flannel Fabric",
     description: {
@@ -127,12 +119,11 @@ const products = [
     },
     imageSrc: "Home/pic1.png",
   },
-
   {
     title: "Knit Fabric",
     description: {
       features: [
-      "Rib Fabric",
+        "Rib Fabric",
         "Suede Fabric",
         "Scuba Fabric",
         "Roma Fabric",
@@ -140,15 +131,11 @@ const products = [
         "DTY Brush Fabric",
         "Single Jersey Fabric",
         "Bonded Fabric",
-        
-    ],
-    specifications: [],
+      ],
+      specifications: [],
     },
     imageSrc: "Home/pic1.png",
   },
-
-
-
 ];
 
 const App = () => {
@@ -157,6 +144,7 @@ const App = () => {
   const onStepEnter = ({ data }) => {
     setCurrentStepIndex(data);
   };
+
   return (
     <div className="app123">
       <Scrollama onStepEnter={onStepEnter}>

@@ -1,6 +1,7 @@
 .products-card-container {
   height: 90vh;
 }
+
 .products-card {
   display: flex;
   margin: 20px auto;
@@ -35,7 +36,7 @@
   height: 100%;
   border-radius: 10px;
   transition: transform 0.3s ease;
-  object-fit:cover;
+  object-fit: cover;
   object-position: top;
 }
 
@@ -118,7 +119,6 @@
   .details-section {
     width: 100%;
     padding: 20px;
-    
   }
 
   .details-section h2,
