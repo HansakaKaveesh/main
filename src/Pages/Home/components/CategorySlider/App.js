@@ -150,7 +150,9 @@ const App = () => {
   const [currentStepIndex, setCurrentStepIndex] = useState(null);
   const [isFullHeight, setIsFullHeight] = useState(false);
   const [animationKey, setAnimationKey] = useState(0);
+  const [scrollProgress, setScrollProgress] = useState(0);
   const appRef = useRef(null);
+  const scrollContainerRef = useRef(null);
 
   useEffect(() => {
     const checkHeight = () => {
@@ -161,11 +163,21 @@ const App = () => {
       }
     };
 
+    const handleScroll = () => {
+      const windowHeight = window.innerHeight;
+      const totalHeight = windowHeight * products.length;
+      const scrolled = window.pageYOffset;
+      const progress = (scrolled / (totalHeight - windowHeight)) * 100;
+      setScrollProgress(Math.min(100, Math.max(0, progress)));
+    };
+
     // Initial check
     checkHeight();
+    handleScroll();
 
-    // Add resize listener
+    // Add event listeners
     window.addEventListener('resize', checkHeight);
+    window.addEventListener('scroll', handleScroll);
 
     // Set CSS variable for total height
     document.documentElement.style.setProperty('--total-products', products.length);
@@ -173,12 +185,29 @@ const App = () => {
     // Cleanup
     return () => {
       window.removeEventListener('resize', checkHeight);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   const onStepEnter = ({ data }) => {
     setCurrentStepIndex(data);
     setAnimationKey(prev => prev + 1);
+  };
+
+  const handleNavigation = (direction) => {
+    if (currentStepIndex === null) return;
+
+    const nextIndex = direction === 'up' 
+      ? Math.max(0, currentStepIndex - 1)
+      : Math.min(products.length - 1, currentStepIndex + 1);
+
+    if (nextIndex !== currentStepIndex) {
+      const targetScroll = nextIndex * window.innerHeight;
+      window.scrollTo({
+        top: targetScroll,
+        behavior: 'smooth'
+      });
+    }
   };
 
   return (
@@ -234,15 +263,46 @@ const App = () => {
                 </div>
               )}
             </div>
+            <div className="navigation-arrows">
+              <button 
+                className={`nav-arrow up ${currentStepIndex === 0 ? 'disabled' : ''}`}
+                onClick={() => handleNavigation('up')}
+                aria-label="Previous product"
+                disabled={currentStepIndex === 0}
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.41 15.41L12 10.83L16.59 15.41L18 14L12 8L6 14L7.41 15.41Z" fill="currentColor"/>
+                </svg>
+              </button>
+              <button 
+                className={`nav-arrow down ${currentStepIndex === products.length - 1 ? 'disabled' : ''}`}
+                onClick={() => handleNavigation('down')}
+                aria-label="Next product"
+                disabled={currentStepIndex === products.length - 1}
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.41 8.59L12 13.17L16.59 8.59L18 10L12 16L6 10L7.41 8.59Z" fill="currentColor"/>
+                </svg>
+              </button>
+            </div>
           </div>
-          <div className="scroll-container">
-            <Scrollama onStepEnter={onStepEnter} offset={0.5}>
+          <div className="scroll-container" ref={scrollContainerRef}>
+            <Scrollama 
+              onStepEnter={onStepEnter} 
+              offset={0.5}
+            >
               {products.map((_, index) => (
                 <Step data={index} key={index}>
-                  <div style={{ height: '100vh' }} />
+                  <div style={{ height: '100vh' }} data-step={index} />
                 </Step>
               ))}
             </Scrollama>
+          </div>
+          <div className="progress-bar-container">
+            <div 
+              className="progress-bar" 
+              style={{ width: `${scrollProgress}%` }} 
+            />
           </div>
         </>
       )}
