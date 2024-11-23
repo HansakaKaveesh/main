@@ -23,7 +23,7 @@ function Header() {
           <li><Link to="/Product" onClick={toggleMobileMenu}>Product</Link></li>
           <li><Link to="/About" onClick={toggleMobileMenu}>About Us</Link></li>
           <li><Link to="/Contact" onClick={toggleMobileMenu}>Contact Us</Link></li>
-          <li><Link to="/QUOTATION" onClick={toggleMobileMenu}>Quotation</Link></li>
+          <li><Link to="/quotation" onClick={toggleMobileMenu}>Quotation</Link></li>
         </ul>
       </nav>
     </header>
