@@ -21,7 +21,7 @@ const products = [
         "Use for dress, shirts, pants, pajamas",
       ],
     },
-    bgImgSrc: "Home/products/rayon_bg.jpeg",
+    bgImgSrc: "Home/products/rayon_bg.jpg",
     fgImgSrc: "Home/products/rayon_fg.jpg",
   },
   {
@@ -43,7 +43,7 @@ const products = [
         "Use for dress, skirt, blouse",
       ],
     },
-    bgImgSrc: "Home/products/polyester_stretch_bg.jpeg",
+    bgImgSrc: "Home/products/polyester_stretch_bg.jpg",
     fgImgSrc: "Home/products/rayon_fg.jpeg",
   },
   {
@@ -63,8 +63,8 @@ const products = [
         "Use for lady's suit, blouse, pant",
       ],
     },
-    bgImgSrc: "Home/products/polyester_bg.jpeg",
-    fgImgSrc: "Home/products/rayon_fg.jpeg",
+    bgImgSrc: "Home/products/polyester_bg.jpg",
+    fgImgSrc: "Home/products/rayon_fg.jpg",
   },
   {
     title: "Satin Fabric",
@@ -83,8 +83,8 @@ const products = [
         "Use for dress, skirt, blouse, shirt, pajama",
       ],
     },
-    bgImgSrc: "Home/products/satin_bg.jpeg",
-    fgImgSrc: "Home/products/rayon_fg.jpeg",
+    bgImgSrc: "Home/products/satin_bg.jpg",
+    fgImgSrc: "Home/products/rayon_fg.jpg",
   },
   {
     title: "Cotton Spandex Fabric",
@@ -96,8 +96,8 @@ const products = [
       ],
       specifications: ["Shirt Weight: 80-140gsm", "Pant Weight: 180-300gsm"],
     },
-    bgImgSrc: "Home/products/cotton_spandex_bg.jpeg",
-    fgImgSrc: "Home/products/rayon_fg.jpeg",
+    bgImgSrc: "Home/products/cotton_spandex_bg.jpg",
+    fgImgSrc: "Home/products/rayon_fg.jpg",
   },
   {
     title: "Bengaline Fabric",
@@ -109,8 +109,8 @@ const products = [
         "Use for skirt, shirt, blouse, pants, leggings",
       ],
     },
-    bgImgSrc: "Home/products/bengaline_bg.jpeg",
-    fgImgSrc: "Home/products/rayon_fg.jpeg",
+    bgImgSrc: "Home/products/bengaline_bg.jpg",
+    fgImgSrc: "Home/products/rayon_fg.jpg",
   },
   {
     title: "Check Flannel Fabric",
@@ -122,8 +122,8 @@ const products = [
         "Use for coat, dress, pants, shirt",
       ],
     },
-    bgImgSrc: "Home/products/check_flannel_bg.jpeg",
-    fgImgSrc: "Home/products/rayon_fg.jpeg",
+    bgImgSrc: "Home/products/check_flannel_bg.jpg",
+    fgImgSrc: "Home/products/rayon_fg.jpg",
   },
   {
     title: "Knit Fabric",
@@ -140,8 +140,8 @@ const products = [
       ],
       specifications: [],
     },
-    bgImgSrc: "Home/products/knit_fabric_bg.jpeg",
-    fgImgSrc: "Home/products/rayon_fg.jpeg",
+    bgImgSrc: "Home/products/knit_fabric_bg.jpg",
+    fgImgSrc: "Home/products/rayon_fg.jpg",
   },
 ];
 
