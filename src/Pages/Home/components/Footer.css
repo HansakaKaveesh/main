@@ -13,9 +13,11 @@ body {
 
 /* Footer Section */
 footer {
+    position: relative;
     background-color: #745500;
     color: #fff;
     padding: 40px 20px;
+    z-index: 10;
 }
 
 /* Footer Container */

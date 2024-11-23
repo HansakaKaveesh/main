@@ -9,8 +9,8 @@ function FlashSale() {
       <img src="/Home/pic3.png" alt="Flash Sale" />
       <div className="flash-sale-text">
         <h2>Custom Items</h2>
-        <p>Flash Sale • 50% - 70% Selected Items. Only now</p>
-        <Link to="/QUOTATION"><a className="btn">QUOTATION</a></Link>
+        <p>Send us a Quotation</p>
+        <Link to="/quotation"><a className="btn">Quotation</a></Link>
         
       </div>
     </section>

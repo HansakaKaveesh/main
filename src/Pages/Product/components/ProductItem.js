@@ -7,7 +7,7 @@ function ProductItem({ imageSrc, itemName, price }) {
     <div className="product-items">
       <img src={imageSrc} alt={itemName} />
       <p>{itemName}</p>
-      <Link to="/QUOTATION"><button>Inquiry</button></Link>
+      <Link to="/quotation"><button>Inquiry</button></Link>
       
     </div>
   );

@@ -19,7 +19,7 @@ const Products = () => {
                     <img src={item.src} alt={item.alt} />
                     <div className="overlay">
                         <h2>{item.name}</h2>
-                        <Link to="/QUOTATION"><button>QUOTATION</button></Link>
+                        <Link to="/quotation"><button>Quotation</button></Link>
                     </div>
                 </div>
             ))}

@@ -2,11 +2,13 @@
 .aboutUS {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
     justify-content: space-between;
     align-items: center;
     padding: 50px 100px;
     background-color: #f3e2c6;
     box-sizing: border-box;
+    z-index: 10;
 }
 
 /* About Text */
@@ -124,4 +126,3 @@
         text-align: center;
     }
 }
-
