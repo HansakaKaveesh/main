@@ -5,10 +5,11 @@ import "./App.css"; // Styling for the main app
 import ProductCard from "./ProductList";
 
 const products = [
-  { title: "Rayon Fabric",
+  { 
+    title: "Rayon Fabric",
     description: {
       features: [
-    "Digital Print Fabric",
+        "Digital Print Fabric",
         "Rayon Twill Fabric",
         "Rayon Spandex Fabric",
         "Rayon Challis Fabric",
