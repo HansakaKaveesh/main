@@ -9,7 +9,7 @@ function Hero() {
       <div className="Sect-text">
         <img src="/Logo&Cloth/pic1.png" alt="Curtain" className="logo" />
         <h1>Comfort to Elegance</h1>
-        <p>Welcome to Glorious Fabric Pvt Ltd.</p>
+        <p>Welcome to Glorious Fabric Pvt Ltd</p>
         <Link to="/quotation"><a className="button">Quotation</a></Link>
       </div>
     </section>

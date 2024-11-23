@@ -1,5 +1,5 @@
 import React from 'react';
-import './Hero.css'; 
+import '../../../components/shared/Hero.css';
 import { Link } from 'react-router-dom';
 
 function Hero() {
@@ -10,7 +10,7 @@ function Hero() {
         <img src="/Logo&Cloth/pic1.png" alt="Curtain" className="logo" />
         <h1>Products</h1>
         <p>Premier fabric store dedicated to offering high-quality textiles</p>
-        <Link to="/quotation"><a className="button">Quotation</a></Link>
+        <Link to="/quotation" className="button">Quotation</Link>
       </div>
     </section>
   );
