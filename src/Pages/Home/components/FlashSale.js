@@ -10,7 +10,7 @@ function FlashSale() {
       <div className="flash-sale-text">
         <h2>Custom Items</h2>
         <p>Send us a Quotation</p>
-        <Link to="/quotation"><a className="btn">Quotation</a></Link>
+        <Link to="/quotation"><button className="btn">Quotation</button></Link>
         
       </div>
     </section>

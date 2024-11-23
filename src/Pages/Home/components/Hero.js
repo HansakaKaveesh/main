@@ -10,7 +10,7 @@ function Hero() {
         <img src="/Logo&Cloth/pic1.png" alt="Curtain" className="logo" />
         <h1>Comfort to Elegance</h1>
         <p>Welcome to Glorious Fabric</p>
-        <Link to="/quotation"><a className="button">Quotation</a></Link>
+        <Link to="/quotation"><button className="button">Quotation</button></Link>
       </div>
     </section>
   );

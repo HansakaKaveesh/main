@@ -147,21 +147,12 @@ const products = [
 
 const App = () => {
   const [currentStepIndex, setCurrentStepIndex] = useState(null);
-  const [isFullHeight, setIsFullHeight] = useState(false);
   const [animationKey, setAnimationKey] = useState(0);
   const [scrollProgress, setScrollProgress] = useState(0);
   const appRef = useRef(null);
   const scrollContainerRef = useRef(null);
 
   useEffect(() => {
-    const checkHeight = () => {
-      if (appRef.current) {
-        const divHeight = appRef.current.getBoundingClientRect().height;
-        const viewportHeight = window.innerHeight;
-        setIsFullHeight(divHeight >= viewportHeight);
-      }
-    };
-
     const handleScroll = () => {
       if (!appRef.current) return;
       
@@ -182,11 +173,9 @@ const App = () => {
     };
 
     // Initial check
-    checkHeight();
     handleScroll();
 
     // Add event listeners
-    window.addEventListener('resize', checkHeight);
     window.addEventListener('scroll', handleScroll);
 
     // Set CSS variable for total height
@@ -194,7 +183,6 @@ const App = () => {
 
     // Cleanup
     return () => {
-      window.removeEventListener('resize', checkHeight);
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);

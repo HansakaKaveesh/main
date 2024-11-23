@@ -55,18 +55,20 @@
 }
 
 .btn {
-    background-color: #FF3B2E;
+    background-color: #c3a763;
     color: white;
+    border: none;
     padding: 15px 30px;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2em;
     border-radius: 5px;
+    display: inline-block;
     transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #ff5e57; 
+    background-color: #a87b35;
 }
 
 /* Responsive Adjustments */
