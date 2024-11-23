@@ -10,7 +10,7 @@ const ProductCard = ({ product, isActive }) => {
     <div className="products-card-container">
       <div className={"products-card"}>
         <div className="images-section">
-          <img src={product.imageSrc} alt={`Item ${product.id}`} />
+          <img src={product.bgImgSrc} alt={`Item ${product.id}`} />
           <div className={"items-label"}>{product.title}</div>
         </div>
         <div className="details-section">
