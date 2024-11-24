@@ -3,16 +3,17 @@
   background-image: linear-gradient(to right, #ffffff, #d8cbb3);
   padding-bottom: 60px;
   width: 100%; /* Flexible width */
+  margin: 0;
+  padding-top: 100px;
 }
 
 .Quotation {
   width: 90%;
   margin: auto;
-  padding: 20px;
+  padding: 50px 20px 20px 20px;
   border: 1px solid #ffffff;
   border-radius: 8px;
   background: #f9f9f9;
-  padding-top: 40px;
 }
 
 h2 {
