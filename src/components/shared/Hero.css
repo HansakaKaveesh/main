@@ -35,7 +35,7 @@
     text-align: right;
     z-index: 2;
     padding: 40px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.7) 100%);
+    background: linear-gradient(-135deg, rgba(0, 0, 0, 0.7) 0%, rgba(116, 85, 0, 0.3) 100%);
     backdrop-filter: blur(10px);
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -48,14 +48,14 @@
 .Sect h1 {
     font-size: 3em;
     margin: 0;
-    color: #000;
+    color: #f3e2c6;
     text-align: right;
 }
 
 .Sect p {
     font-size: 1.5em;
     margin: 10px 0 30px;
-    color: #000;
+    color: #f3e2c6;
     text-align: right;
 }
 
@@ -90,20 +90,24 @@
         margin: 0;
     }
 
+    .Sect-text img {
+        width: 150px;
+    }
+
     .logo {
         margin: 0 auto 20px;
     }
 
     .Sect h1 {
-        font-size: 4em;
+        font-size: 3em;
     }
     
     .Sect p {
-        font-size: 2em;
+        font-size: 1.2em;
     }
 
     .button {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 }
 
@@ -114,12 +118,16 @@
         left: -110%;
     }
 
+    .Sect-text img {
+        width: 120px;
+    }
+
     .logo {
         width: 180px;
     }
 
     .Sect h1 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     .Sect p {
@@ -127,6 +135,6 @@
     }
 
     .button {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 }
