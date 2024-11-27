@@ -156,10 +156,10 @@ const App = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (!appRef.current) return;
-      
+
       const windowHeight = window.innerHeight;
       const sliderTop = appRef.current.getBoundingClientRect().top;
-      
+
       // If slider is not yet in view, progress is 0
       if (sliderTop > 0) {
         setScrollProgress(0);
@@ -196,7 +196,7 @@ const App = () => {
   const handleNavigation = (direction) => {
     const windowHeight = window.innerHeight;
     const currentScroll = window.scrollY;
-    const scrollAmount = direction === 'next' 
+    const scrollAmount = direction === 'next'
       ? currentScroll + windowHeight
       : currentScroll - windowHeight;
 
@@ -244,11 +244,11 @@ const App = () => {
                   </ul>
                 </div>
               )}
-              <Link 
+              <Link
                 to={`/quotation?subject=Quote Request for ${encodeURIComponent(products[currentStepIndex].title)}#quotation-section`}
                 className="quotation-button"
               >
-                Get Quotation 
+                Quote
               </Link>
             </div>
           )}
