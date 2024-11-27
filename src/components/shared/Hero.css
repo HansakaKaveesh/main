@@ -74,6 +74,7 @@
 
 .button:hover {
     background-color: #a87b35;
+    color: #f3e2c6;
 }
 
 /* Tablet styles */
@@ -101,7 +102,7 @@
     .Sect h1 {
         font-size: 3em;
     }
-    
+
     .Sect p {
         font-size: 1.2em;
     }

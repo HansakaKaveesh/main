@@ -1,18 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com'; // Import EmailJS
 import './QuotationForm.css'; // Assuming you will style using an external CSS file
+import { useSearchParams } from 'react-router-dom';
 
 const Quotation = () => {
+  const [searchParams] = useSearchParams();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     address: '',
     telNo: '',
-    description: ''
+    description: searchParams.get('subject') || '' // Initialize with URL subject if present
   });
 
   const [popupVisible, setPopupVisible] = useState(false); // State for popup visibility
   const [status, setStatus] = useState(''); // State to manage status message
+
+  useEffect(() => {
+    // Scroll to form section if there's a subject in URL
+    if (searchParams.get('subject')) {
+      const formElement = document.getElementById('quotation-form');
+      if (formElement) {
+        setTimeout(() => {
+          formElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+      }
+    }
+  }, [searchParams]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -49,8 +63,8 @@ const Quotation = () => {
   };
 
   return (
-    <div className='Quotation-BK'>
-      <form className="Quotation" onSubmit={handleSubmit}>
+    <div id='quotation-section' className='Quotation-BK'>
+      <form id="quotation-form" className="Quotation" onSubmit={handleSubmit}>
         <h2>Send Quotation</h2>
         
         <div className="form-row">

@@ -1,6 +1,7 @@
 // App.js
 import React, { useState, useEffect, useRef } from "react";
 import { Scrollama, Step } from "react-scrollama";
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import "./App.css";
 
 const products = [
@@ -243,6 +244,12 @@ const App = () => {
                   </ul>
                 </div>
               )}
+              <Link 
+                to={`/quotation?subject=Quote Request for ${encodeURIComponent(products[currentStepIndex].title)}#quotation-section`}
+                className="quotation-button"
+              >
+                Get Quotation 
+              </Link>
             </div>
           )}
         </div>
