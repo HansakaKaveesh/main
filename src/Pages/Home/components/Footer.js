@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css'; 
+import './Footer.css';
 import { Link } from 'react-router-dom';
 import ScrollToTop from './ScrollToTop';
 
@@ -33,8 +33,10 @@ function Footer() {
         <div className="footer-section">
           <h2>Contact Us</h2>
           <p><i className="fas fa-envelope"></i>info@gloriousfabric.lk</p>
-          <p><i className="fas fa-phone-alt"></i>0776769398 / 0773315775</p>
-          <p><i className="fas fa-map-marker-alt"></i>Glorious Fabric (Pvt) Ltd,<br/>182/C, Kandewatta Rd,<br/>Malwana.</p>
+          <p><i className="fas fa-phone-alt"></i>
+            <a href="tel:+94777679398">0777679398</a>&nbsp;/&nbsp;<a href="tel:+94773315775">0773315775</a>
+          </p>
+          <p><i className="fas fa-map-marker-alt"></i>Glorious Fabric (Pvt) Ltd,<br />182/C, Kandewatta Rd,<br />Malwana.</p>
         </div>
       </div>
 

@@ -22,7 +22,7 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  
+
     // EmailJS integration using simplified environment variables
     emailjs.send(
       process.env.REACT_APP_SERVICE_ID,   // EmailJS service ID from .env
@@ -34,16 +34,16 @@ const ContactUs = () => {
       },
       process.env.REACT_APP_USER_ID       // EmailJS public key from .env
     )
-    .then((result) => {
-      console.log(result.text);
-      setShowPopup(true); // Show popup on success
-    }, (error) => {
-      console.log(error.text);
-      alert("Failed to send message, please try again later.");
-    });
-  };    
-  
-  
+      .then((result) => {
+        console.log(result.text);
+        setShowPopup(true); // Show popup on success
+      }, (error) => {
+        console.log(error.text);
+        alert("Failed to send message, please try again later.");
+      });
+  };
+
+
 
   const closePopup = () => {
     setShowPopup(false);
@@ -89,16 +89,17 @@ const ContactUs = () => {
             <FontAwesomeIcon icon={faEnvelope} /> info@gloriousfabric.lk
           </p>
           <p>
-            <FontAwesomeIcon icon={faPhone} /> 0776769398 / 0773315775
+            <FontAwesomeIcon icon={faPhone} />
+            <a href="tel:+94777679398">0777679398</a>&nbsp;/&nbsp;<a href="tel:+94773315775">0773315775</a>
           </p>
         </div>
       </div>
-      
+
       {/* Popup Message */}
       {showPopup && (
         <div className="popup">
           <div className="popup-content">
-          <h3>Success!</h3>
+            <h3>Success!</h3>
             <p>Message sent successfully!</p>
             <button onClick={closePopup}>Close</button>
           </div>

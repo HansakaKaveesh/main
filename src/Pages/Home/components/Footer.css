@@ -28,17 +28,25 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .footer-section i {
     margin-right: 15px;
-    color: #ffffff; /* Change the icon color */
-  }
+    color: #ffffff;
+    /* Change the icon color */
+}
+
+.footer-section a {
+    color: inherit;
+    text-decoration: none;
+}
 
 /* Individual Footer Sections */
 .footer-section {
     flex: 1;
     margin: 20px;
     min-width: 250px;
-    text-align: center; /* Centering content for smaller screens */
+    text-align: center;
+    /* Centering content for smaller screens */
 }
 
 /* Footer Section Headers */
@@ -55,7 +63,7 @@ footer {
     text-align: justify;
     padding: 5px;
     display: flex;
-  align-items: center;
+    align-items: center;
 }
 
 /* Footer Links List */
@@ -127,8 +135,9 @@ footer {
     .footer-bottom {
         font-size: 13px;
     }
-    .footer-section p, 
-    .footer-section ul li a, 
+
+    .footer-section p,
+    .footer-section ul li a,
     .footer-bottom p {
         font-size: 12px;
         justify-content: center;
@@ -151,8 +160,8 @@ footer {
         font-size: 16px;
     }
 
-    .footer-section p, 
-    .footer-section ul li a, 
+    .footer-section p,
+    .footer-section ul li a,
     .footer-bottom p {
         font-size: 12px;
         justify-content: center;
