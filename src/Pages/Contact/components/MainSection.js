@@ -90,7 +90,7 @@ const ContactUs = () => {
           </p>
           <p>
             <FontAwesomeIcon icon={faPhone} />
-            <a href="tel:+94777679398">0777679398</a>&nbsp;/&nbsp;<a href="tel:+94773315775">0773315775</a>
+            <a href="tel:+94777679398">0777679398</a>&nbsp;/&nbsp;<a href="tel:+94773315775">0773315775</a>&nbsp;/&nbsp;<a href="tel:+940777876743">0777876743</a>
           </p>
         </div>
       </div>
