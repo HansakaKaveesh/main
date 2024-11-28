@@ -61,8 +61,8 @@
 
 /* Button styling */
 .button {
-    background-color: #c3a763;
-    color: white;
+    background-color: #5a3b09;
+    color: #f3e2c6;
     padding: 15px 30px;
     text-decoration: none;
     font-weight: bold;
@@ -73,8 +73,7 @@
 }
 
 .button:hover {
-    background-color: #a87b35;
-    color: #f3e2c6;
+    background-color: #745500;
 }
 
 /* Tablet styles */
